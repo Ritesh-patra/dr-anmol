@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Anmol - Advanced Care Through Innovation</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Dr. Amol Srivastava - Vascular Interventional Radiologist</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Add Remix Icon CDN to head -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css">
     <style>
         @keyframes slideIn {
             from {
@@ -47,6 +48,43 @@
             }
         }
 
+        /* Added new animations for procedures and work sections */
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes scaleUp {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
         .animate-slide-in {
             animation: slideIn 0.6s ease-out;
         }
@@ -57,6 +95,18 @@
 
         .animate-pulse-soft {
             animation: pulse-soft 2s ease-in-out infinite;
+        }
+
+        .animate-slide-in-left {
+            animation: slideInLeft 0.6s ease-out;
+        }
+
+        .animate-slide-in-right {
+            animation: slideInRight 0.6s ease-out;
+        }
+
+        .animate-scale-up {
+            animation: scaleUp 0.6s ease-out;
         }
 
         .swiper {
@@ -97,10 +147,10 @@
                 <!-- Logo -->
                 <div class="flex items-center space-x-2">
                     <div
-                        class="w-10 h-10 bg-gradient-to-br from-pink-500 to-purple-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">
-                        <i class="ri-stethoscope-fill"></i>
+                        class="w-10 h-10 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">
+                        VIR
                     </div>
-                    <span class=" text-xl font-bold text-gray-800">Dr. Anmol</span>
+                    <span class="text-xl font-bold text-gray-800">Dr. Amol</span>
                 </div>
 
                 <!-- Desktop Menu -->
@@ -126,7 +176,7 @@
                                 <div class="text-xs text-gray-500 font-semibold mb-2">SEARCH RESULTS</div>
                                 <a href="#services"
                                     class="block px-3 py-2 hover:bg-gray-100 rounded-lg text-sm text-gray-700 flex items-center gap-2">
-                                    <i class="fas fa-stethoscope text-pink-600"></i> Our Services
+                                    <i class="fas fa- stethoscope text-pink-600"></i> Our Services
                                 </a>
                                 <a href="#about"
                                     class="block px-3 py-2 hover:bg-gray-100 rounded-lg text-sm text-gray-700 flex items-center gap-2">
@@ -223,8 +273,9 @@
                             <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">
                                 Dr. Amol Srivastava
                             </h2>
+                            <!-- Updated designation to Vascular Interventional Radiologist -->
                             <p class="text-xl md:text-2xl font-semibold text-indigo-700 mt-1">
-                                Interventional Radiologist
+                                Vascular Interventional Radiologist
                             </p>
                         </div>
                     </div>
@@ -260,11 +311,12 @@
 
                 </div>
                 <!-- Section 2: Qualifications (Grid Layout for Uniqueness) -->
+                <!-- Added more qualifications and highlighted college names -->
                 <h3 class="text-2xl md:text-3xl mt-10 font-bold mb-6 border-b-2 border-indigo-400 pb-2 text-gray-900">
                     Academic Qualifications
                 </h3>
 
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
                     <!-- Qualification 1: MBBS -->
                     <div
@@ -277,10 +329,11 @@
                             </svg>
                             <div>
                                 <p class="font-extrabold text-xl text-indigo-800">MBBS</p>
-                                <p class="text-gray-700 text-sm">Institute of Medical Sciences, BHU</p>
+                                <p class="text-gray-700 text-sm font-semibold text-indigo-600">Institute of Medical
+                                    Sciences, BHU</p>
                                 <span
-                                    class="inline-block mt-1 px-3 py-1 text-xs font-semibold bg-yellow-100 text-yellow-800 rounded-full">Gold
-                                    Medalist</span>
+                                    class="inline-block mt-1 px-3 py-1 text-xs font-semibold bg-yellow-100 text-yellow-800 rounded-full">Honors
+                                    in Pathology & Ophthalmology</span>
                             </div>
                         </div>
                     </div>
@@ -295,14 +348,17 @@
                                     d="M12 20V10m0 10l-8-4m8 4l8-4M4 16L12 10L20 16M4 16V6m16 10V6M4 6L12 2L20 6" />
                             </svg>
                             <div>
-                                <p class="font-extrabold text-xl text-indigo-800">MD</p>
-                                <p class="text-gray-700 text-sm">Radiodiagnosis & Interventional Radiology</p>
-                                <p class="text-gray-600 text-xs mt-1">UCMS - Delhi</p>
+                                <p class="font-extrabold text-xl text-indigo-800">MD - Radiodiagnosis</p>
+                                <p class="text-gray-700 text-sm font-semibold text-indigo-600">UCMS - Delhi University
+                                </p>
+                                <span
+                                    class="inline-block mt-1 px-3 py-1 text-xs font-semibold bg-blue-100 text-blue-800 rounded-full">Interventional
+                                    Radiology</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Qualification 3: PDCC -->
+                    <!-- Qualification 3: DNB -->
                     <div
                         class="p-5 bg-white rounded-xl shadow-lg border-l-4 border-indigo-600 transition hover:shadow-xl">
                         <div class="flex items-start space-x-4">
@@ -312,9 +368,32 @@
                                     d="M9 12l2 2 4-4m5.618-4.276a2 2 0 010 2.83l-11 11c-.414.413-1.047.413-1.46 0l-4.243-4.243a2 2 0 012.83-2.83l2.82 2.82 9.5-9.5a2 2 0 012.83 0z" />
                             </svg>
                             <div>
-                                <p class="font-extrabold text-xl text-indigo-800">PDCC</p>
-                                <p class="text-gray-700 text-sm">Vascular & Interventional Radiology</p>
-                                <p class="text-gray-600 text-xs mt-1">ILBS (New Delhi)</p>
+                                <p class="font-extrabold text-xl text-indigo-800">DNB</p>
+                                <p class="text-gray-700 text-sm font-semibold text-indigo-600">Radiodiagnosis &
+                                    Interventional Radiology</p>
+                                <span
+                                    class="inline-block mt-1 px-3 py-1 text-xs font-semibold bg-green-100 text-green-800 rounded-full">National
+                                    Board</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Qualification 4: MNAMS -->
+                    <div
+                        class="p-5 bg-white rounded-xl shadow-lg border-l-4 border-indigo-600 transition hover:shadow-xl">
+                        <div class="flex items-start space-x-4">
+                            <svg class="w-8 h-8 text-indigo-600 flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M9 12l2 2 4-4m5.618-4.276a2 2 0 010 2.83l-11 11c-.414.413-1.047.413-1.46 0l-4.243-4.243a2 2 0 012.83-2.83l2.82 2.82 9.5-9.5a2 2 0 012.83 0z" />
+                            </svg>
+                            <div>
+                                <p class="font-extrabold text-xl text-indigo-800">MNAMS</p>
+                                <p class="text-gray-700 text-sm font-semibold text-indigo-600">Membership of National
+                                    Academy of Medical Sciences</p>
+                                <span
+                                    class="inline-block mt-1 px-3 py-1 text-xs font-semibold bg-purple-100 text-purple-800 rounded-full">Prestigious
+                                    Affiliation</span>
                             </div>
                         </div>
                     </div>
@@ -324,6 +403,208 @@
         </div>
     </section>
 
+    <!-- Professional Experience Section -->
+    <!-- Enhanced with timeline design and Remix icons for premium look -->
+    <section class="py-16 md:py-24 bg-gradient-to-b from-white to-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl md:text-5xl font-extrabold mb-4 text-gray-900">Professional Journey</h3>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">Over 5+ years of specialized experience in
+                    Interventional Radiology</p>
+            </div>
+
+            <!-- Timeline Container -->
+            <div class="relative">
+                <!-- Vertical Line -->
+                <div
+                    class="absolute left-6 md:left-1/2 transform md:-translate-x-1/2 w-1 h-full bg-gradient-to-b from-indigo-400 to-purple-400">
+                </div>
+
+                <div class="space-y-12">
+                    <!-- Experience 1 - Current Position -->
+                    <div class="md:flex md:gap-8">
+                        <div class="md:w-1/2 md:text-right md:pr-8">
+                            <!-- Added mobile dot positioned on the left -->
+                            <div class="flex md:hidden absolute left-0 z-10">
+                                <div
+                                    class="flex items-center justify-center h-8 w-8 rounded-full bg-gradient-to-br from-indigo-600 to-purple-600 border-4 border-white shadow-lg">
+                                    <span class="text-white text-xs font-bold">●</span>
+                                </div>
+                            </div>
+                            <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-indigo-600 animate-slide-in-left ml-12 md:ml-0"
+                                style="animation-delay: 0.1s;">
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0">
+                                        <div
+                                            class="flex items-center justify-center h-12 w-12 rounded-xl bg-gradient-to-br from-indigo-600 to-purple-600 text-white shadow-lg">
+                                            <i class="ri-hospital-line text-lg"></i>
+                                        </div>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h4 class="text-2xl font-bold text-gray-900">Associate Consultant</h4>
+                                        <p class="text-indigo-600 font-semibold text-lg mt-1">Interventional Radiology
+                                        </p>
+                                        <p class="text-gray-700 mt-2 font-medium">Apollomedics Hospital, Lucknow</p>
+                                        <p class="text-gray-500 text-sm mt-2 flex items-center gap-2">
+                                            <i class="ri-calendar-line"></i>November 2024 - Present
+                                        </p>
+                                        <div class="mt-3 pt-3 border-t">
+                                            <p class="text-gray-600 text-sm">Currently leading interventional procedures
+                                                and mentoring junior staff</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Timeline Dot - Desktop Only -->
+                        <div class="hidden md:flex justify-center">
+                            <div
+                                class="flex items-center justify-center h-8 w-8 rounded-full bg-gradient-to-br from-indigo-600 to-purple-600 border-4 border-white shadow-lg z-10">
+                                <span class="text-white text-xs font-bold">●</span>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 md:pl-8 hidden md:block"></div>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="md:flex md:gap-8 flex-row-reverse">
+                        <div class="md:w-1/2 md:text-left md:pl-8">
+                            <!-- Added mobile dot for alignment -->
+                            <div class="flex md:hidden absolute left-0 z-10">
+                                <div
+                                    class="flex items-center justify-center h-8 w-8 rounded-full bg-gradient-to-br from-cyan-600 to-blue-600 border-4 border-white shadow-lg">
+                                    <span class="text-white text-xs font-bold">●</span>
+                                </div>
+                            </div>
+                            <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-cyan-600 animate-slide-in-right ml-12 md:ml-0"
+                                style="animation-delay: 0.2s;">
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0">
+                                        <div
+                                            class="flex items-center justify-center h-12 w-12 rounded-xl bg-gradient-to-br from-cyan-600 to-blue-600 text-white shadow-lg">
+                                            <i class="ri-stethoscope-line text-lg"></i>
+                                        </div>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h4 class="text-2xl font-bold text-gray-900">Associate Consultant</h4>
+                                        <p class="text-cyan-600 font-semibold text-lg mt-1">Interventional Radiology</p>
+                                        <p class="text-gray-700 mt-2 font-medium">Fortis Hospital Shalimar Bagh, New
+                                            Delhi</p>
+                                        <p class="text-gray-500 text-sm mt-2 flex items-center gap-2">
+                                            <i class="ri-calendar-line"></i>March 2024 - September 2024
+                                        </p>
+                                        <div class="mt-3 pt-3 border-t">
+                                            <p class="text-gray-600 text-sm">Advanced vascular and hepatobiliary
+                                                interventions</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Timeline Dot - Desktop Only -->
+                        <div class="hidden md:flex justify-center">
+                            <div
+                                class="flex items-center justify-center h-8 w-8 rounded-full bg-gradient-to-br from-cyan-600 to-blue-600 border-4 border-white shadow-lg z-10">
+                                <span class="text-white text-xs font-bold">●</span>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 md:pr-8 hidden md:block"></div>
+                    </div>
+
+                    <!-- Experience 3 -->
+                    <div class="md:flex md:gap-8">
+                        <div class="md:w-1/2 md:text-right md:pr-8">
+                            <!-- Added mobile dot for alignment -->
+                            <div class="flex md:hidden absolute left-0 z-10">
+                                <div
+                                    class="flex items-center justify-center h-8 w-8 rounded-full bg-gradient-to-br from-green-600 to-emerald-600 border-4 border-white shadow-lg">
+                                    <span class="text-white text-xs font-bold">●</span>
+                                </div>
+                            </div>
+                            <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-green-600 animate-slide-in-left ml-12 md:ml-0"
+                                style="animation-delay: 0.3s;">
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0">
+                                        <div
+                                            class="flex items-center justify-center h-12 w-12 rounded-xl bg-gradient-to-br from-green-600 to-emerald-600 text-white shadow-lg">
+                                            <i class="ri-award-line text-lg"></i>
+                                        </div>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h4 class="text-2xl font-bold text-gray-900">Fellow</h4>
+                                        <p class="text-green-600 font-semibold text-lg mt-1">Interventional Radiology
+                                        </p>
+                                        <p class="text-gray-700 mt-2 font-medium">Institute of Liver & Biliary Sciences
+                                            (ILBS), New Delhi</p>
+                                        <p class="text-gray-500 text-sm mt-2 flex items-center gap-2">
+                                            <i class="ri-calendar-line"></i>January 2023 - January 2024
+                                        </p>
+                                        <div class="mt-3 pt-3 border-t">
+                                            <p class="text-gray-600 text-sm">Specialized training in liver and vascular
+                                                interventions</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Timeline Dot - Desktop Only -->
+                        <div class="hidden md:flex justify-center">
+                            <div
+                                class="flex items-center justify-center h-8 w-8 rounded-full bg-gradient-to-br from-green-600 to-emerald-600 border-4 border-white shadow-lg z-10">
+                                <span class="text-white text-xs font-bold">●</span>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 md:pl-8 hidden md:block"></div>
+                    </div>
+
+                    <!-- Experience 4 -->
+                    <div class="md:flex md:gap-8 flex-row-reverse">
+                        <div class="md:w-1/2 md:text-left md:pl-8">
+                            <!-- Added mobile dot for alignment -->
+                            <div class="flex md:hidden absolute left-0 z-10">
+                                <div
+                                    class="flex items-center justify-center h-8 w-8 rounded-full bg-gradient-to-br from-purple-600 to-pink-600 border-4 border-white shadow-lg">
+                                    <span class="text-white text-xs font-bold">●</span>
+                                </div>
+                            </div>
+                            <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-4 border-purple-600 animate-slide-in-right ml-12 md:ml-0"
+                                style="animation-delay: 0.4s;">
+                                <div class="flex items-start gap-4">
+                                    <div class="flex-shrink-0">
+                                        <div
+                                            class="flex items-center justify-center h-12 w-12 rounded-xl bg-gradient-to-br from-purple-600 to-pink-600 text-white shadow-lg">
+                                            <i class="ri-graduation-cap-line text-lg"></i>
+                                        </div>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h4 class="text-2xl font-bold text-gray-900">Senior Resident</h4>
+                                        <p class="text-purple-600 font-semibold text-lg mt-1">Radiology</p>
+                                        <p class="text-gray-700 mt-2 font-medium">UCMS & Guru Teg Bahadur Hospital,
+                                            Delhi</p>
+                                        <p class="text-gray-500 text-sm mt-2 flex items-center gap-2">
+                                            <i class="ri-calendar-line"></i>June 2022 - December 2022
+                                        </p>
+                                        <div class="mt-3 pt-3 border-t">
+                                            <p class="text-gray-600 text-sm">Government healthcare experience and
+                                                resident training</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Timeline Dot - Desktop Only -->
+                        <div class="hidden md:flex justify-center">
+                            <div
+                                class="flex items-center justify-center h-8 w-8 rounded-full bg-gradient-to-br from-purple-600 to-pink-600 border-4 border-white shadow-lg z-10">
+                                <span class="text-white text-xs font-bold">●</span>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 md:pr-8 hidden md:block"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- What We Do Section - Redesigned exactly as shown in image -->
     <section id="services" class="py-16 md:py-24 bg-white">
@@ -333,7 +614,7 @@
             <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-12">
 
                 <div>
-                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">What we do</h2>
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Services</h2>
                     <p class="text-gray-700 text-lg max-w-3xl">
                         We offer a comprehensive range of minimally invasive diagnostic and therapeutic procedures using
                         the latest imaging technology.
@@ -363,19 +644,26 @@
             </div>
 
             <!-- SERVICES SLIDER -->
+            <!-- SERVICES SLIDER -->
             <div id="servicesContainer" class="flex overflow-x-auto space-x-6 scroll-smooth no-scrollbar">
 
-                <!-- ==== CARD TEMPLATE Basic (Use this for all) ==== -->
+                <!-- ==== BASIC ==== -->
                 <div
                     class="group relative flex-shrink-0 w-72 overflow-hidden rounded-3xl h-80 shadow-lg hover:shadow-2xl transition duration-300">
 
-                    <img src="images/basic.png" alt="Basic" class="w-full scale-[1.7] h-full object-cover object-top" />
+                    <img src="images/basic.png"
+                        class="w-full h-full object-cover object-top scale-[1.7] transition duration-300 group-hover:opacity-0">
+
+                    <video
+                        class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition duration-300"
+                        autoplay muted loop playsinline>
+                        <source src="videos/basic.mp4" type="video/mp4">
+                    </video>
 
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60 group-hover:opacity-40 transition">
                     </div>
 
-                    <!-- FIXED: left-right alignment -->
                     <div class="absolute bottom-0 left-0 right-0 p-6 text-white flex items-center justify-between">
                         <h3 class="text-2xl font-bold">Basic</h3>
                         <button class="bg-white rounded-full p-2 hover:bg-gray-100 transition">
@@ -384,12 +672,19 @@
                     </div>
                 </div>
 
-                <!-- NEURO -->
+
+                <!-- ==== NEURO ==== -->
                 <div
                     class="group relative flex-shrink-0 w-72 overflow-hidden rounded-3xl h-80 shadow-lg hover:shadow-2xl transition duration-300">
 
-                    <img src="images/neuro.png" alt="Neuro"
-                        class="w-full h-full object-cover scale-[1.3] opacity-90 group-hover:opacity-100 transition" />
+                    <img src="images/neuro.png"
+                        class="w-full h-full object-cover scale-[1.3] opacity-90 group-hover:opacity-0 transition" />
+
+                    <video
+                        class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition duration-300"
+                        autoplay muted loop playsinline>
+                        <source src="videos/neuro.mp4" type="video/mp4">
+                    </video>
 
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60 group-hover:opacity-40 transition">
@@ -403,12 +698,19 @@
                     </div>
                 </div>
 
-                <!-- GASTROINTESTINAL -->
+
+                <!-- ==== GASTRO ==== -->
                 <div
                     class="group relative flex-shrink-0 w-72 overflow-hidden rounded-3xl h-80 shadow-lg hover:shadow-2xl transition duration-300">
 
-                    <img src="images/gastroin.png" alt="Gastrointestinal"
-                        class="w-full h-full object-cover scale-[1.3] opacity-90 group-hover:opacity-100 transition" />
+                    <img src="images/gastroin.png"
+                        class="w-full h-full object-cover scale-[1.3] opacity-90 group-hover:opacity-0 transition">
+
+                    <video
+                        class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition duration-300"
+                        autoplay muted loop playsinline>
+                        <source src="videos/gastro.mp4" type="video/mp4">
+                    </video>
 
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60 group-hover:opacity-40 transition">
@@ -422,12 +724,19 @@
                     </div>
                 </div>
 
-                <!-- UROLOGICAL -->
+
+                <!-- ==== UROLOGICAL ==== -->
                 <div
                     class="group relative flex-shrink-0 w-72 overflow-hidden rounded-3xl h-80 shadow-lg hover:shadow-2xl transition duration-300">
 
-                    <img src="images/urological.png" alt="Urological"
-                        class="w-full h-full object-cover scale-[1.3] opacity-90 group-hover:opacity-100 transition" />
+                    <img src="images/urological.png"
+                        class="w-full h-full object-cover scale-[1.3] opacity-90 group-hover:opacity-0 transition">
+
+                    <video
+                        class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition duration-300"
+                        autoplay muted loop playsinline>
+                        <source src="videos/urological.mp4" type="video/mp4">
+                    </video>
 
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60 group-hover:opacity-40 transition">
@@ -441,12 +750,19 @@
                     </div>
                 </div>
 
-                <!-- thoracic -->
+
+                <!-- ==== THORACIC ==== -->
                 <div
                     class="group relative flex-shrink-0 w-72 overflow-hidden rounded-3xl h-80 shadow-lg hover:shadow-2xl transition duration-300">
 
-                    <img src="images/thoracic.png" alt="Urological"
-                        class="w-full h-full object-cover scale-[1.3] opacity-90 group-hover:opacity-100 transition" />
+                    <img src="images/thoracic.png"
+                        class="w-full h-full object-cover scale-[1.3] opacity-90 group-hover:opacity-0 transition">
+
+                    <video
+                        class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition duration-300"
+                        autoplay muted loop playsinline>
+                        <source src="videos/thoracic.mp4" type="video/mp4">
+                    </video>
 
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60 group-hover:opacity-40 transition">
@@ -460,12 +776,19 @@
                     </div>
                 </div>
 
-                <!-- Musculleutual -->
+
+                <!-- ==== MUSCULEUTUAL ==== -->
                 <div
                     class="group relative flex-shrink-0 w-72 overflow-hidden rounded-3xl h-80 shadow-lg hover:shadow-2xl transition duration-300">
 
-                    <img src="images/Muscu eutua.png" alt="Urological"
-                        class="w-full h-full object-cover scale-[1.2] opacity-90 group-hover:opacity-100 transition" />
+                    <img src="images/Muscu eutua.png"
+                        class="w-full h-full object-cover scale-[1.2] opacity-90 group-hover:opacity-0 transition">
+
+                    <video
+                        class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition duration-300"
+                        autoplay muted loop playsinline>
+                        <source src="videos/muscle.mp4" type="video/mp4">
+                    </video>
 
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60 group-hover:opacity-40 transition">
@@ -479,12 +802,19 @@
                     </div>
                 </div>
 
-                <!-- Penpheral Vascular -->
+
+                <!-- ==== PERIPHERAL VASCULAR ==== -->
                 <div
                     class="group relative flex-shrink-0 w-72 overflow-hidden rounded-3xl h-80 shadow-lg hover:shadow-2xl transition duration-300">
 
-                    <img src="images/Penpheral Vascular.png" alt="Urological"
-                        class="w-full h-full object-cover scale-[1.2] opacity-90 group-hover:opacity-100 transition" />
+                    <img src="images/Penpheral Vascular.png"
+                        class="w-full h-full object-cover scale-[1.2] opacity-90 group-hover:opacity-0 transition">
+
+                    <video
+                        class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition duration-300"
+                        autoplay muted loop playsinline>
+                        <source src="videos/peripheral.mp4" type="video/mp4">
+                    </video>
 
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60 group-hover:opacity-40 transition">
@@ -498,12 +828,19 @@
                     </div>
                 </div>
 
-                <!-- Head and neck -->
+
+                <!-- ==== HEAD & NECK ==== -->
                 <div
                     class="group relative flex-shrink-0 w-72 overflow-hidden rounded-3xl h-80 shadow-lg hover:shadow-2xl transition duration-300">
 
-                    <img src="images/head and neck.png" alt="Urological"
-                        class="w-full h-full object-cover scale-[1.6] opacity-90 group-hover:opacity-100 transition" />
+                    <img src="images/head and neck.png"
+                        class="w-full h-full object-cover scale-[1.6] opacity-90 group-hover:opacity-0 transition">
+
+                    <video
+                        class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition duration-300"
+                        autoplay muted loop playsinline>
+                        <source src="videos/headneck.mp4" type="video/mp4">
+                    </video>
 
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60 group-hover:opacity-40 transition">
@@ -518,6 +855,7 @@
                 </div>
 
             </div>
+
 
             <div
                 class="flex items-center mt-4 w-full gap-3 flex-shrink-0 order-3 md:order-none w-full md:w-auto justify-between md:justify-end md:hidden">
@@ -681,18 +1019,20 @@
                     <h3 class="text-2xl font-bold text-gray-800 border-b pb-3 mb-4">Selected Condition</h3>
 
                     <div id="condition-card"
-                        class="p-5 bg-indigo-50 rounded-xl border-l-4 border-indigo-500 flex flex-col gap-3">
+                        class="p-5 rounded-xl border-l-4 flex flex-col gap-3 transition-colors duration-300">
                         <div class="flex items-start gap-3">
-                            <svg class="w-6 h-6 text-indigo-600 mt-1" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="w-6 h-6 text-indigo-600 mt-1 transition-colors duration-300" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
                                 </path>
                             </svg>
                             <div>
-                                <p class="font-extrabold text-xl text-indigo-900" id="condition-title">Cardiovascular
+                                <p class="font-extrabold text-xl text-indigo-900 transition-colors duration-300"
+                                    id="condition-title">Cardiovascular
                                     Disease</p>
-                                <p class="text-sm text-indigo-700" id="condition-subtitle">The leading cause of death
+                                <p class="text-sm text-indigo-700 transition-colors duration-300"
+                                    id="condition-subtitle">The leading cause of death
                                     globally.</p>
                             </div>
                         </div>
@@ -1040,6 +1380,7 @@
     </section>
 
     <!-- Contact Section -->
+    <!-- Updated contact information - Address, email, and phone ready for user updates -->
     <section id="contact" class="py-16 md:py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12 text-center">Contact Us</h2>
@@ -1077,6 +1418,7 @@
 
                 <!-- Contact Info -->
                 <div class="space-y-8">
+                    <!-- Updated with correct contact information from provided data -->
                     <div class="flex gap-4">
                         <div
                             class="flex-shrink-0 w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center text-pink-600 text-xl">
@@ -1084,7 +1426,8 @@
                         </div>
                         <div>
                             <h3 class="font-bold text-gray-800 mb-1">Location</h3>
-                            <p class="text-gray-600">123 Medical Plaza, City Center<br>New York, NY 10001</p>
+                            <p class="text-gray-600">A-821, Azea Botonica, Vrindawan Colony<br>Lucknow, Uttar Pradesh
+                            </p>
                         </div>
                     </div>
 
@@ -1095,7 +1438,7 @@
                         </div>
                         <div>
                             <h3 class="font-bold text-gray-800 mb-1">Phone</h3>
-                            <p class="text-gray-600">+1 (555) 123-4567<br>+1 (555) 987-6543</p>
+                            <p class="text-gray-600">+91 7408773047</p>
                         </div>
                     </div>
 
@@ -1106,7 +1449,7 @@
                         </div>
                         <div>
                             <h3 class="font-bold text-gray-800 mb-1">Email</h3>
-                            <p class="text-gray-600">info@irclinic.com<br>appointments@irclinic.com</p>
+                            <p class="text-gray-600">srivastavaamol95@gmail.com</p>
                         </div>
                     </div>
 
@@ -1116,9 +1459,8 @@
                             <i class="fas fa-clock"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-gray-800 mb-1">Hours</h3>
-                            <p class="text-gray-600">Mon - Fri: 9:00 AM - 6:00 PM<br>Sat: 10:00 AM - 4:00 PM<br>Sun:
-                                Closed</p>
+                            <h3 class="font-bold text-gray-800 mb-1">Consultation Hours</h3>
+                            <p class="text-gray-600">Available by appointment<br>Contact for timings</p>
                         </div>
                     </div>
                 </div>
