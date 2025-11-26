@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thoracic Interventions - Dr Anmol</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse-glow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(14, 190, 219, 0.7);
+            }
+
+            50% {
+                box-shadow: 0 0 0 10px rgba(14, 190, 219, 0);
+            }
+        }
+
+        .animate-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .pulse-glow {
+            animation: pulse-glow 2s infinite;
+        }
+
+        .stagger-1 {
+            animation-delay: 0.1s;
+        }
+
+        .stagger-2 {
+            animation-delay: 0.2s;
+        }
+
+        .stagger-3 {
+            animation-delay: 0.3s;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+
+                    <!-- Square Icon/Image Box -->
+                    <div
+                        class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center overflow-hidden">
+                        <img src="images/logo1.jpg" alt="Brain Icon" class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- Doctor Name -->
+                    <span class="text-2xl font-bold text-gray-800 tracking-wide">
+                        <img src="images/logo2.jpg" class="w-20 h-auto" alt="">
+                    </span>
+
+                </div>
+
+                <div class="flex items-center space-x-6">
+                    <a href="index.html" class="text-gray-600 hover:text-gray-900">Home</a>
+                    <a href="index.html#appointment"
+                        class="px-6 py-2 rounded-full font-semibold text-white transition-all hover:shadow-lg pulse-glow"
+                        style="background-color: #0EBEDB;">
+                        Consult Today
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="py-20 px-4 bg-gradient-to-br from-blue-50 to-cyan-50">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+            <!-- LEFT: IMAGE -->
+            <div class="animate-in-up">
+                <img src="images/thairok.jpg" alt="Thoracic Interventions"
+                    class="w-full rounded-2xl shadow-lg object-cover">
+            </div>
+
+            <!-- RIGHT: CONTENT -->
+            <div class="animate-in-up stagger-1">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6" style="color: #0EBEDB;">
+                    Thoracic Interventions
+                </h1>
+
+                <p class="text-xl text-gray-700 mb-8 leading-relaxed">
+                    Specialized treatment for lung, pleural, and mediastinal conditions.
+                    Offering expert minimally invasive procedures for a wide range of thoracic diseases
+                    with advanced, patient-focused care.
+                </p>
+
+                <a href="index.html#appointment" class="inline-block px-8 py-3 rounded-lg font-bold text-white transition-all 
+                hover:shadow-xl hover:scale-105" style="background-color: #0EBEDB;">
+                    Schedule Consultation
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Services -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16" style="color: #0EBEDB;">Thoracic Services</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="animate-in-up stagger-1 p-8 rounded-xl bg-gray-50 hover:shadow-lg transition-all">
+                    <div class="text-4xl mb-4">💨</div>
+                    <h3 class="text-2xl font-bold mb-4">Pleural Drainage</h3>
+                    <p class="text-gray-700">Treatment of pleural effusions and empyema with image-guided catheter
+                        placement.</p>
+                </div>
+                <div class="animate-in-up stagger-2 p-8 rounded-xl bg-gray-50 hover:shadow-lg transition-all">
+                    <div class="text-4xl mb-4">🫁</div>
+                    <h3 class="text-2xl font-bold mb-4">Lung Biopsy</h3>
+                    <p class="text-gray-700">Minimally invasive diagnosis of lung lesions and pneumonia.</p>
+                </div>
+                <div class="animate-in-up stagger-3 p-8 rounded-xl bg-gray-50 hover:shadow-lg transition-all">
+                    <div class="text-4xl mb-4">🔥</div>
+                    <h3 class="text-2xl font-bold mb-4">Lung Ablation</h3>
+                    <p class="text-gray-700">Minimally invasive treatment of lung tumors using radiofrequency or
+                        cryotherapy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Procedures -->
+    <section class="py-20 px-4 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16" style="color: #0EBEDB;">Detailed Procedures</h2>
+
+            <div class="space-y-12">
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <h3 class="text-2xl font-bold mb-4" style="color: #0EBEDB;">CT-Guided Lung Biopsy</h3>
+                    <p class="text-gray-700 mb-4">Diagnosis of lung lesions with high accuracy:</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4 mb-4">
+                        <li>Diagnostic accuracy >95%</li>
+                        <li>Minimally invasive approach</li>
+                        <li>Local anesthesia only</li>
+                        <li>Same-day discharge typical</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <h3 class="text-2xl font-bold mb-4" style="color: #0EBEDB;">Pleural Catheter Drainage</h3>
+                    <p class="text-gray-700 mb-4">Treatment of pleural effusions:</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4 mb-4">
+                        <li>Immediate symptom relief</li>
+                        <li>Image-guided safe placement</li>
+                        <li>Can manage large effusions</li>
+                        <li>Tunneled catheters for chronic drainage</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <h3 class="text-2xl font-bold mb-4" style="color: #0EBEDB;">Radiofrequency Ablation</h3>
+                    <p class="text-gray-700 mb-4">Minimally invasive lung cancer treatment:</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4 mb-4">
+                        <li>Local control of lung tumors</li>
+                        <li>Preserves lung function</li>
+                        <li>Lower morbidity than surgery</li>
+                        <li>Can treat multiple lesions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 px-4 text-white" style="background-color: #0EBEDB;">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-5xl font-bold mb-8">Thoracic Concerns?</h2>
+            <p class="text-xl mb-10 text-cyan-100">Let Dr Anmol help with minimally invasive solutions.</p>
+            <a href="index.html#appointment"
+                class="inline-block px-8 py-4 rounded-lg font-bold text-lg bg-white text-gray-900 hover:shadow-xl hover:scale-105 transition-all">
+                Book Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto text-center text-gray-400">
+            <p>&copy; 2025 Dr Anmol Interventional Radiology. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

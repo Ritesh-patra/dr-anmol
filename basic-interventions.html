@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Interventional Radiology - Dr Anmol</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes pulse-glow {
+            0%, 100% {
+                box-shadow: 0 0 0 0 rgba(14, 190, 219, 0.7);
+            }
+            50% {
+                box-shadow: 0 0 0 10px rgba(14, 190, 219, 0);
+            }
+        }
+        .animate-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        .animate-in-left {
+            animation: slideInLeft 0.8s ease-out forwards;
+        }
+        .animate-in-right {
+            animation: slideInRight 0.8s ease-out forwards;
+        }
+        .pulse-glow {
+            animation: pulse-glow 2s infinite;
+        }
+        .stagger-1 { animation-delay: 0.1s; }
+        .stagger-2 { animation-delay: 0.2s; }
+        .stagger-3 { animation-delay: 0.3s; }
+        .stagger-4 { animation-delay: 0.4s; }
+        .stagger-5 { animation-delay: 0.5s; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+               <!-- Logo -->
+                <div class="flex items-center space-x-3">
+
+                    <!-- Square Icon/Image Box -->
+                    <div
+                        class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center overflow-hidden">
+                        <img src="images/logo1.jpg" alt="Brain Icon" class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- Doctor Name -->
+                    <span class="text-2xl font-bold text-gray-800 tracking-wide">
+                        <img src="images/logo2.jpg" class="w-20 h-auto" alt="">
+                    </span>
+
+                </div>
+
+                <div class="flex items-center space-x-6">
+                    <a href="index.html" class="text-gray-600 hover:text-gray-900">Home</a>
+                    <a href="index.html#appointment" class="px-6 py-2 rounded-full font-semibold text-white transition-all hover:shadow-lg pulse-glow" style="background-color: #0EBEDB;">
+                        Consult Today
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 px-4 overflow-hidden bg-gradient-to-br from-blue-50 to-cyan-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="animate-in-left">
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6" style="color: #0EBEDB;">Basic Interventional Radiology</h1>
+                    <p class="text-xl text-gray-700 mb-8 leading-relaxed">
+                        Foundation procedures for minimally invasive treatment. Dr Anmol specializes in essential intervention techniques that provide effective results with minimal recovery time.
+                    </p>
+                    <a href="index.html#appointment" class="inline-block px-8 py-3 rounded-lg font-bold text-white transition-all hover:shadow-xl hover:scale-105" style="background-color: #0EBEDB;">
+                        Schedule Consultation
+                    </a>
+                </div>
+                <div class="animate-in-right hidden md:block ">
+                    <div class="relative h-96 bg-transparent rounded-2xl shadow-2xl overflow-hidden flex items-center justify-center">
+                        <img src="images/basic.jpg" class="w-full h-full object-contain scale-[1.5] object-top" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16" style="color: #0EBEDB;">Our Core Services</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="animate-in-up stagger-1 p-8 rounded-xl bg-gray-50 hover:shadow-lg transition-all">
+                    <div class="text-4xl mb-4">💉</div>
+                    <h3 class="text-2xl font-bold mb-4">IV Access</h3>
+                    <p class="text-gray-700 leading-relaxed">Expert placement of peripheral and central lines for medication delivery, dialysis, and long-term access management. Ultrasound-guided techniques for maximum safety and accuracy.</p>
+                </div>
+                <div class="animate-in-up stagger-2 p-8 rounded-xl bg-gray-50 hover:shadow-lg transition-all">
+                    <div class="text-4xl mb-4">🩸</div>
+                    <h3 class="text-2xl font-bold mb-4">Venography</h3>
+                    <p class="text-gray-700 leading-relaxed">Detailed imaging of venous system to diagnose blockages, thrombosis, and stenosis. Essential for treatment planning and monitoring vascular conditions.</p>
+                </div>
+                <div class="animate-in-up stagger-3 p-8 rounded-xl bg-gray-50 hover:shadow-lg transition-all">
+                    <div class="text-4xl mb-4">🔍</div>
+                    <h3 class="text-2xl font-bold mb-4">Guided Biopsy</h3>
+                    <p class="text-gray-700 leading-relaxed">Precision tissue sampling under imaging guidance. Used for diagnosis of tumors, infections, and lesions throughout the body with minimal patient discomfort.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Procedure Details Section -->
+    <section class="py-20 px-4 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16" style="color: #0EBEDB;">Procedure Details</h2>
+            
+            <div class="space-y-12">
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all">
+                    <h3 class="text-2xl font-bold mb-4" style="color: #0EBEDB;">Central Venous Catheter Placement</h3>
+                    <p class="text-gray-700 mb-4">This fundamental procedure involves placing a catheter into a large vein, typically the subclavian, internal jugular, or femoral vein. The catheter provides reliable access for:</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4 mb-4">
+                        <li>Chemotherapy administration</li>
+                        <li>Total parenteral nutrition (TPN)</li>
+                        <li>Hemodialysis</li>
+                        <li>Frequent blood draws</li>
+                        <li>Emergency medication access</li>
+                    </ul>
+                    <p class="text-gray-700"><strong>Recovery:</strong> Minimal downtime, patients can resume normal activities within 24-48 hours.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all">
+                    <h3 class="text-2xl font-bold mb-4" style="color: #0EBEDB;">Ultrasound-Guided Biopsy</h3>
+                    <p class="text-gray-700 mb-4">Real-time ultrasound guidance ensures accurate tissue sampling from any accessible lesion. This technique:</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4 mb-4">
+                        <li>Increases diagnostic accuracy to 95%+</li>
+                        <li>Reduces patient trauma and complications</li>
+                        <li>Provides rapid pathology results</li>
+                        <li>Eliminates need for open surgery in many cases</li>
+                    </ul>
+                    <p class="text-gray-700"><strong>Benefits:</strong> Outpatient procedure, returns to normal diet and activity same day.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all">
+                    <h3 class="text-2xl font-bold mb-4" style="color: #0EBEDB;">Nephrostomy Tube Placement</h3>
+                    <p class="text-gray-700 mb-4">Percutaneous drainage of the kidney for obstruction relief and urine drainage. Essential when:</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4 mb-4">
+                        <li>Kidney stones block urine flow</li>
+                        <li>Tumors compress the urinary tract</li>
+                        <li>Ureter damage requires temporary drainage</li>
+                        <li>Sepsis prevention is critical</li>
+                    </ul>
+                    <p class="text-gray-700"><strong>Outcome:</strong> Immediate symptom relief, improved kidney function, can be temporary or long-term as needed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16" style="color: #0EBEDB;">Why Choose Dr Anmol?</h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="text-2xl" style="color: #0EBEDB;">✓</div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2">Minimally Invasive</h4>
+                            <p class="text-gray-700">Smaller incisions mean less trauma, faster recovery, and fewer complications compared to traditional surgery.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="text-2xl" style="color: #0EBEDB;">✓</div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2">Image-Guided Precision</h4>
+                            <p class="text-gray-700">Real-time imaging ensures accuracy and reduces complications. Dr Anmol uses latest imaging technologies.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="text-2xl" style="color: #0EBEDB;">✓</div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2">Cost-Effective</h4>
+                            <p class="text-gray-700">Outpatient procedures reduce hospital stays and overall treatment costs significantly.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="text-2xl" style="color: #0EBEDB;">✓</div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2">Rapid Recovery</h4>
+                            <p class="text-gray-700">Most patients resume normal activities within 24-48 hours. No extended bed rest required.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="text-2xl" style="color: #0EBEDB;">✓</div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2">Proven Safety Record</h4>
+                            <p class="text-gray-700">With decades of experience, Dr Anmol maintains excellent complication rates.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="text-2xl" style="color: #0EBEDB;">✓</div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2">Comprehensive Support</h4>
+                            <p class="text-gray-700">From pre-procedure consultation to post-care follow-up, we're with you every step.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frequently Asked Questions -->
+    <section class="py-20 px-4 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16" style="color: #0EBEDB;">Frequently Asked Questions</h2>
+            <div class="space-y-6">
+                <details class="group p-6 bg-white rounded-lg cursor-pointer hover:shadow-md transition-all">
+                    <summary class="flex items-center justify-between font-bold text-lg" style="color: #0EBEDB;">
+                        <span>Will I feel pain during the procedure?</span>
+                        <span class="transform group-open:rotate-180 transition-transform">↓</span>
+                    </summary>
+                    <p class="mt-4 text-gray-700 leading-relaxed">We use local anesthesia and sedation to ensure your comfort. Most patients report minimal discomfort, usually just pressure sensation during the procedure.</p>
+                </details>
+
+                <details class="group p-6 bg-white rounded-lg cursor-pointer hover:shadow-md transition-all">
+                    <summary class="flex items-center justify-between font-bold text-lg" style="color: #0EBEDB;">
+                        <span>How long does recovery take?</span>
+                        <span class="transform group-open:rotate-180 transition-transform">↓</span>
+                    </summary>
+                    <p class="mt-4 text-gray-700 leading-relaxed">Most basic interventional procedures have minimal recovery. Patients can usually return to light activities within 24 hours and resume full activities in 48-72 hours.</p>
+                </details>
+
+                <details class="group p-6 bg-white rounded-lg cursor-pointer hover:shadow-md transition-all">
+                    <summary class="flex items-center justify-between font-bold text-lg" style="color: #0EBEDB;">
+                        <span>What are the risks involved?</span>
+                        <span class="transform group-open:rotate-180 transition-transform">↓</span>
+                    </summary>
+                    <p class="mt-4 text-gray-700 leading-relaxed">All procedures carry minimal risks including infection, bleeding, or allergy to contrast. Dr Anmol will discuss specific risks during your consultation and explain all safety measures taken.</p>
+                </details>
+
+                <details class="group p-6 bg-white rounded-lg cursor-pointer hover:shadow-md transition-all">
+                    <summary class="flex items-center justify-between font-bold text-lg" style="color: #0EBEDB;">
+                        <span>Do I need someone to drive me home?</span>
+                        <span class="transform group-open:rotate-180 transition-transform">↓</span>
+                    </summary>
+                    <p class="mt-4 text-gray-700 leading-relaxed">Yes, if sedation is used, you'll need a responsible adult to drive. Local anesthesia only may not require this, but we recommend it for safety and comfort.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-4 text-white" style="background-color: #0EBEDB;">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-5xl font-bold mb-8">Ready to Take the Next Step?</h2>
+            <p class="text-xl mb-10 text-cyan-100">Schedule your consultation with Dr Anmol today and explore your treatment options.</p>
+            <a href="index.html#appointment" class="inline-block px-8 py-4 rounded-lg font-bold text-lg bg-white text-gray-900 hover:shadow-xl hover:scale-105 transition-all">
+                Book Your Appointment Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="font-bold text-lg mb-4" style="color: #0EBEDB;">Dr Anmol</h3>
+                    <p class="text-gray-400">Leading specialist in Interventional Radiology and minimally invasive procedures.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-white">Home</a></li>
+                        <li><a href="index.html#services" class="hover:text-white">All Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <p class="text-gray-400">
+                        Email: contact@dranmol.com<br>
+                        Phone: +1 (555) 123-4567
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Dr Anmol Interventional Radiology. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
