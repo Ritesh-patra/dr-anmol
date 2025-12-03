@@ -246,11 +246,11 @@
         </div>
     </section>
 
-    <section id="about" class="pt-16 md:py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-3 lg:px-3">
+    <section id="about" class="pt-16 md:py-10 bg-white">
+        <div class="max-w-7xl mx-auto px-2 sm:px-3 lg:px-3">
             <!-- Main Content Container with Unique, Clean Styling -->
             <div
-                class="bg-white rounded-3xl profile-card-shadow border border-gray-100 overflow-hidden p-8 md:p-12 lg:p-16">
+                class="bg-white rounded-3xl profile-card-shadow border border-gray-100 overflow-hidden py-8 md:p-12 lg:p-16">
 
                 <div class="lg:flex lg:items-start lg:space-x-12 relative z-10">
 
@@ -277,37 +277,100 @@
                     </div>
 
                     <!-- Right Column: Bio and Qualifications (66% Width) -->
-                    <div class="lg:w-2/3 text-gray-800">
+                 <div class="lg:w-2/3 mx-auto bg-white p-6 rounded-2xl shadow-lg">
+      <div class="flex flex-col lg:flex-row gap-6">
+        <div class="flex-1 text-justify">
+          <h3 class="text-2xl font-semibold mb-4 italic">Dr. Amol Srivastava</h3>
 
-                        <!-- Section 1: Professional Summary / Bio -->
-                        <div class="flex-1 flex flex-col justify-center" style="text-align: justify;">
-                            <h3 class="text-2xl font-semibold mb-6 font-[italic]">Dr. Amol Srivastava</h3>
+          <p class="text-black/90 mb-4 leading-relaxed">
+            Dr. Amol Srivastava is a leading Interventional Radiologist dedicated to treating
+            complex medical conditions through the smallest possible incisions. By combining diagnostic
+            precision with advanced endovascular techniques, he offers patients a safer alternative to
+            traditional open surgery resulting in less pain, reduced risk, and faster recovery times.
+          </p>
 
-                            <p class="text-black/90 mb-4 leading-relaxed">
-                                Dr. Amol Srivastava is a leading Interventional Radiologist dedicated to treating
-                                complex medical conditions
-                                through the smallest possible incisions. By combining diagnostic precision with advanced
-                                endovascular techniques,
-                                he offers patients a safer alternative to traditional open surgery resulting in less
-                                pain, reduced risk, and
-                                faster recovery times.
-                            </p>
-                            <p class="text-black/90 mb-4 leading-relaxed">
-                                While Dr. Srivastava is frequently called upon to manage critical emergencies such as
-                                bleeding and acute vascular
-                                obstructions he maintains a special interest in outpatient "day-care" therapies that
-                                allow patients to return home
-                                the same day.
-                            </p>
+          <p class="text-black/90 mb-4 leading-relaxed">
+            While Dr. Srivastava is frequently called upon to manage critical emergencies such as
+            bleeding and acute vascular obstructions he maintains a special interest in outpatient
+            "day-care" therapies that allow patients to return home the same day.
+          </p>
 
+          <p class="text-black/90 leading-relaxed">
+            His commitment to innovation and patient-focused treatment continues to make a meaningful
+            impact in the field of interventional radiology.
+          </p>
+        </div>
+      </div>
 
-                            <p class="text-black/90  leading-relaxed">
-                                His commitment to innovation and patient-focused treatment continues to make a
-                                meaningful impact in the field of interventional radiology.
-                            </p>
-                        </div>
+      <!-- Colorful Focus Area Boxes -->
+      <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
 
-                    </div>
+        <!-- Card 1 -->
+        <div class="flex gap-4 items-start bg-gradient-to-br from-indigo-50 to-white p-4 rounded-xl shadow-sm border border-indigo-100">
+          <div class="icon-bg bg-indigo-100 text-indigo-700">
+            <!-- Vein / Laser SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 1.343-3 3v7h6v-7c0-1.657-1.343-3-3-3z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7l6-3" />
+            </svg>
+          </div>
+          <div>
+            <h4 class="font-semibold">Venous Interventions</h4>
+            <p class="text-sm text-gray-700/90">Advanced management of varicose veins using painless Glue therapy and Laser Ablation.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="flex gap-4 items-start bg-gradient-to-br from-pink-50 to-white p-4 rounded-xl shadow-sm border border-pink-100">
+          <div class="icon-bg bg-pink-100 text-pink-700">
+            <!-- Gender / Health SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 12a4 4 0 100-8 4 4 0 000 8zM6 20a6 6 0 0112 0H6z" />
+            </svg>
+          </div>
+          <div>
+            <h4 class="font-semibold">Women’s & Men’s Health</h4>
+            <p class="text-sm text-gray-700/90">Non-surgical Fibroid Embolization and Varicocele Embolization — effective, minimally invasive care.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="flex gap-4 items-start bg-gradient-to-br from-emerald-50 to-white p-4 rounded-xl shadow-sm border border-emerald-100">
+          <div class="icon-bg bg-emerald-100 text-emerald-700">
+            <!-- Thyroid / gland SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v6m0 8v6M4 8h16" />
+            </svg>
+          </div>
+          <div>
+            <h4 class="font-semibold">Thyroid Care</h4>
+            <p class="text-sm text-gray-700/90">Non-surgical interventions for thyroid goitres and nodules — precise, outpatient-friendly procedures.</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="flex gap-4 items-start bg-gradient-to-br from-yellow-50 to-white p-4 rounded-xl shadow-sm border border-yellow-100">
+          <div class="icon-bg bg-yellow-100 text-yellow-700">
+            <!-- Complex care / liver SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c2.761 0 5-2.239 5-5S14.761 1 12 1 7 3.239 7 6s2.239 5 5 5z" />
+            </svg>
+          </div>
+          <div>
+            <h4 class="font-semibold">Complex Care</h4>
+            <p class="text-sm text-gray-700/90">Hepatobiliary interventions, Portal Hypertension management, and Onco-interventions with targeted endovascular techniques.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Short highlight bar -->
+      <div class="mt-6 p-4 rounded-lg bg-gradient-to-r from-sky-50 to-indigo-50 border border-sky-100">
+        <p class="font-medium text-gray-800">Dr. Srivastava represents the modern era of medicine: precise, effective, and focused on reducing patient recovery time.</p>
+      </div>
+
+    </div>
 
 
                 </div>
