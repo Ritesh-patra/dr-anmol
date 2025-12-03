@@ -1,239 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thoracic Interventions - Dr Anmol</title>
+    <title>Thoracic Interventions - Dr. Amol Srivastava</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes pulse-glow {
-
-            0%,
-            100% {
-                box-shadow: 0 0 0 0 rgba(14, 190, 219, 0.7);
-            }
-
-            50% {
-                box-shadow: 0 0 0 10px rgba(14, 190, 219, 0);
-            }
-        }
-
-        .animate-in-up {
-            animation: fadeInUp 0.8s ease-out forwards;
-        }
-
-        .pulse-glow {
-            animation: pulse-glow 2s infinite;
-        }
-
-        .stagger-1 {
-            animation-delay: 0.1s;
-        }
-
-        .stagger-2 {
-            animation-delay: 0.2s;
-        }
-
-        .stagger-3 {
-            animation-delay: 0.3s;
-        }
+        .primary-color { color: #0CBCD9; }
+        .primary-bg { background-color: #0CBCD9; }
+        .primary-border { border-color: #0CBCD9; }
+        .hover-primary:hover { background-color: #0CBCD9; }
+        .text-primary { color: #0CBCD9; }
+        .bg-primary { background-color: #0CBCD9; }
     </style>
 </head>
-
-<body class="bg-gray-50">
-    <!-- Navbar -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <!-- Logo -->
-                <div class="flex items-center space-x-3">
-
-                    <!-- Square Icon/Image Box -->
-                    <div
-                        class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center overflow-hidden">
-                        <img src="images/logo1.jpg" alt="Brain Icon" class="w-full h-full object-cover">
-                    </div>
-
-                    <!-- Doctor Name -->
-                    <span class="text-2xl font-bold text-gray-800 tracking-wide">
-                        <img src="images/logo2.png" class="w-20 h-auto" alt="">
-                    </span>
-
-                </div>
-
-                <div class="flex items-center space-x-6">
-                    <a href="index.html#appointment"
-                        class="px-6 py-2 rounded-full font-semibold text-white transition-all hover:shadow-lg pulse-glow"
-                        style="background-color: #0EBEDB;">
-                        ConsultToday
-                    </a>
-                </div>
-            </div>
+<body class="bg-white text-gray-900">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold primary-color">Dr. Amol Srivastava</a>
+            <a href="index.html" class="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition">
+                <i class="fas fa-arrow-left"></i> Back to Services
+            </a>
         </div>
     </nav>
 
-    <!-- Hero -->
-    <section class="py-20 px-4 bg-gradient-to-br from-blue-50 to-cyan-50">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-
-            <!-- LEFT: IMAGE -->
-            <div class="animate-in-up">
-                <img src="images/thairok.jpg" alt="Thoracic Interventions"
-                    class="w-full rounded-2xl shadow-lg object-cover">
-            </div>
-
-            <!-- RIGHT: CONTENT -->
-            <div class="animate-in-up stagger-1">
-                <h1 class="text-5xl md:text-6xl font-bold mb-6" style="color: #0EBEDB;">
-                    Thoracic Interventions
-                </h1>
-
-                <p class="text-xl text-gray-700 mb-8 leading-relaxed">
-                    Specialized treatment for lung, pleural, and mediastinal conditions.
-                    Offering expert minimally invasive procedures for a wide range of thoracic diseases
-                    with advanced, patient-focused care.
-                </p>
-
-                <a href="index.html#appointment" class="inline-block px-8 py-3 rounded-lg font-bold text-white transition-all 
-                hover:shadow-xl hover:scale-105" style="background-color: #0EBEDB;">
-                    Schedule Consultation
+    <!-- Hero Section -->
+    <section class="py-12 md:py-20 bg-gradient-to-br from-white to-blue-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="mb-8">
+                <a href="index.html#services" class="inline-flex items-center gap-2 text-primary font-semibold mb-4 hover:gap-3 transition">
+                    <i class="fas fa-arrow-left text-sm"></i> Services
                 </a>
             </div>
-
-        </div>
-    </section>
-
-
-    <!-- Services -->
- <section class="py-16 sm:py-20 bg-white dark:bg-gray-900">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-        <div class="text-center mb-12 sm:mb-16">
-            <h2 class="text-4xl sm:text-5xl font-extrabold text-[#20B2AA] dark:text-[#5eead4]">
-                🫁 Pulmonary & Thoracic Interventions
-            </h2>
-            <p class="mt-4 text-lg text-gray-600 dark:text-gray-400 max-w-4xl mx-auto">
-                Advanced, needle-/catheter-based procedures for lung and thoracic disorders, ensuring minimal invasiveness, rapid recovery, and maximum safety.
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Thoracic Interventions</h1>
+            <p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-3xl">
+                Specialized, minimally invasive procedures for thoracic and pulmonary conditions. We provide expert image-guided treatments for hemoptysis, pulmonary embolism, lung tumours, and other thoracic vascular disorders.
             </p>
         </div>
+    </section>
 
-        <div class="grid lg:grid-cols-2 gap-8">
-
-            <div class="group p-8 bg-gray-50 dark:bg-gray-800 rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl border-t-4 border-[#3CB371] dark:border-[#4ade80]">
-                <div class="flex items-center mb-5">
-                    <div class="flex-shrink-0 flex items-center justify-center w-14 h-14 rounded-full bg-[#3CB371]/20 text-[#3CB371] dark:bg-[#4ade80]/20 dark:text-[#4ade80] mr-4">
-                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m-6 6h6"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14v-2m0 0V8m0 4h-2m2 0h2m7 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+    <!-- Procedures Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="mb-16">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="w-1 h-8 bg-primary rounded-full"></div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Core Thoracic Procedures</h2>
+                </div>
+                <div class="space-y-6">
+                    <div class="bg-gradient-to-br from-primary/5 to-blue-50 rounded-2xl p-8 border border-primary/10">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-wind text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-2">🔹 Bronchial Artery Embolisation (BAE)</h3>
+                                <p class="text-gray-700 leading-relaxed">
+                                    Stops massive / recurrent hemoptysis quickly and safely by targeting the bleeding vessel.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Bleeding & Vascular Management</h3>
-                </div>
-                <ul class="space-y-3 text-sm text-gray-700 dark:text-gray-300">
-                    <li class="flex items-start">
-                        <span class="text-[#20B2AA] dark:text-[#5eead4] mr-2 text-lg">•</span>
-                        Bronchial Artery Embolisation (BAE) (Stops massive/recurrent hemoptysis)
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-[#20B2AA] dark:text-[#5eead4] mr-2 text-lg">•</span>
-                        Pulmonary AVM Embolisation (Prevents stroke, brain abscess and hypoxia)
-                    </li>
-                </ul>
-            </div>
 
-            <div class="group p-8 bg-gray-50 dark:bg-gray-800 rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl border-t-4 border-[#FF4500] dark:border-[#f97316]">
-                <div class="flex items-center mb-5">
-                    <div class="flex-shrink-0 flex items-center justify-center w-14 h-14 rounded-full bg-[#FF4500]/20 text-[#FF4500] dark:bg-[#f97316]/20 dark:text-[#f97316] mr-4">
-                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    <div class="bg-gradient-to-br from-primary/5 to-blue-50 rounded-2xl p-8 border border-primary/10">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-heart-pulse text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-2">🔹 Pulmonary AVM Embolisation</h3>
+                                <p class="text-gray-700 leading-relaxed">
+                                    Blocks abnormal connections in the lungs to prevent stroke, brain abscess and hypoxia.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Clot & Tumour Ablation</h3>
-                </div>
-                <ul class="space-y-3 text-sm text-gray-700 dark:text-gray-300">
-                    <li class="flex items-start">
-                        <span class="text-[#20B2AA] dark:text-[#5eead4] mr-2 text-lg">•</span>
-                        Catheter-Directed Thrombolysis (CDT) / Thrombectomy (Removes life-threatening clots)
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-[#20B2AA] dark:text-[#5eead4] mr-2 text-lg">•</span>
-                        Thermal Ablation (RFA / MWA / Cryoablation) (Destroys tumours without open surgery)
-                    </li>
-                </ul>
-            </div>
-            
-        </div>
-    </div>
-</section>
 
-    <!-- Procedures -->
-    <section class="py-20 px-4 bg-gray-50">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-4xl font-bold text-center mb-16" style="color: #0EBEDB;">Detailed Procedures</h2>
+                    <div class="bg-gradient-to-br from-primary/5 to-blue-50 rounded-2xl p-8 border border-primary/10">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-syringe text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-2">🔹 Catheter-Directed Thrombolysis (CDT) / Thrombectomy</h3>
+                                <p class="text-gray-700 leading-relaxed">
+                                    Dissolves or removes life-threatening clots from pulmonary arteries — rapidly improves oxygenation and right-heart strain.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="space-y-12">
-                <div class="bg-white p-8 rounded-xl shadow-md">
-                    <h3 class="text-2xl font-bold mb-4" style="color: #0EBEDB;">CT-Guided Lung Biopsy</h3>
-                    <p class="text-gray-700 mb-4">Diagnosis of lung lesions with high accuracy:</p>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4 mb-4">
-                        <li>Diagnostic accuracy >95%</li>
-                        <li>Minimally invasive approach</li>
-                        <li>Local anesthesia only</li>
-                        <li>Same-day discharge typical</li>
-                    </ul>
-                </div>
-
-                <div class="bg-white p-8 rounded-xl shadow-md">
-                    <h3 class="text-2xl font-bold mb-4" style="color: #0EBEDB;">Pleural Catheter Drainage</h3>
-                    <p class="text-gray-700 mb-4">Treatment of pleural effusions:</p>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4 mb-4">
-                        <li>Immediate symptom relief</li>
-                        <li>Image-guided safe placement</li>
-                        <li>Can manage large effusions</li>
-                        <li>Tunneled catheters for chronic drainage</li>
-                    </ul>
-                </div>
-
-                <div class="bg-white p-8 rounded-xl shadow-md">
-                    <h3 class="text-2xl font-bold mb-4" style="color: #0EBEDB;">Radiofrequency Ablation</h3>
-                    <p class="text-gray-700 mb-4">Minimally invasive lung cancer treatment:</p>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4 mb-4">
-                        <li>Local control of lung tumors</li>
-                        <li>Preserves lung function</li>
-                        <li>Lower morbidity than surgery</li>
-                        <li>Can treat multiple lesions</li>
-                    </ul>
+                    <div class="bg-gradient-to-br from-primary/5 to-blue-50 rounded-2xl p-8 border border-primary/10">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-fire text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-2">🔹 Thermal Ablation (RFA / MWA / Cryoablation)</h3>
+                                <p class="text-gray-700 leading-relaxed">
+                                    Destroys primary or metastatic tumours in the lung without open thoracic surgery.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA -->
-    <section class="py-20 px-4 text-white" style="background-color: #0EBEDB;">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-5xl font-bold mb-8">Thoracic Concerns?</h2>
-            <p class="text-xl mb-10 text-cyan-100">Let Dr Anmol help with minimally invasive solutions.</p>
-            <a href="index.html#appointment"
-                class="inline-block px-8 py-4 rounded-lg font-bold text-lg bg-white text-gray-900 hover:shadow-xl hover:scale-105 transition-all">
-                Book Now
-            </a>
+    <!-- Benefits Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-primary/5 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Why Choose Thoracic Interventions?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-bolt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Emergency Ready</h3>
+                    <p class="text-gray-700">Rapid intervention for life-threatening conditions</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-lungs text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Lung Preservation</h3>
+                    <p class="text-gray-700">Avoid thoracic surgery when possible</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-check-circle text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Proven Success</h3>
+                    <p class="text-gray-700">High success rates for complex cases</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Need Thoracic Intervention?</h2>
+            <p class="text-xl text-gray-700 mb-8">Expert care for pulmonary and thoracic vascular conditions</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="px-8 py-4 bg-primary text-white font-semibold rounded-full hover:opacity-90 transition flex items-center justify-center gap-2">
+                    <i class="fas fa-phone"></i> Emergency Contact
+                </button>
+                <button class="px-8 py-4 border-2 border-primary text-primary font-semibold rounded-full hover:bg-primary/10 transition flex items-center justify-center gap-2">
+                    <i class="fas fa-envelope"></i> Request Info
+                </button>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12 px-4">
-        <div class="max-w-6xl mx-auto text-center text-gray-400">
-            <p>&copy; 2025 Dr Anmol Interventional Radiology. All rights reserved.</p>
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Dr. Amol Srivastava</h3>
+                    <p class="text-gray-400">Thoracic Intervention Specialist</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="basic-interventions.html" class="hover:text-primary transition">Basic</a></li>
+                        <li><a href="gastrointestinal-interventions.html" class="hover:text-primary transition">Gastro</a></li>
+                        <li><a href="thoracic-interventions.html" class="hover:text-primary transition">Thoracic</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Other Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-primary transition">Neuro</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Vascular</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Obstetrics</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <p class="text-gray-400 mb-2">Phone: +91 XXXXX XXXXX</p>
+                    <p class="text-gray-400">Email: srivastavaamol95@gmail.com</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Dr. Amol Srivastava. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 </body>
-
 </html>

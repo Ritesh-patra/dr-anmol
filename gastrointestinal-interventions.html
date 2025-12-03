@@ -3,407 +3,267 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gastrointestinal Interventions - Dr Anmol</title>
+    <title>Gastro Interventions - Dr. Amol Srivastava</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        @keyframes slideInLeft {
-            from {
-                opacity: 0;
-                transform: translateX(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-        @keyframes slideInRight {
-            from {
-                opacity: 0;
-                transform: translateX(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-        @keyframes pulse-glow {
-            0%, 100% {
-                box-shadow: 0 0 0 0 rgba(14, 190, 219, 0.7);
-            }
-            50% {
-                box-shadow: 0 0 0 10px rgba(14, 190, 219, 0);
-            }
-        }
-        .animate-in-up {
-            animation: fadeInUp 0.8s ease-out forwards;
-        }
-        .animate-in-left {
-            animation: slideInLeft 0.8s ease-out forwards;
-        }
-        .animate-in-right {
-            animation: slideInRight 0.8s ease-out forwards;
-        }
-        .pulse-glow {
-            animation: pulse-glow 2s infinite;
-        }
-        .stagger-1 { animation-delay: 0.1s; }
-        .stagger-2 { animation-delay: 0.2s; }
-        .stagger-3 { animation-delay: 0.3s; }
-        .stagger-4 { animation-delay: 0.4s; }
-        .stagger-5 { animation-delay: 0.5s; }
+        .primary-color { color: #0CBCD9; }
+        .primary-bg { background-color: #0CBCD9; }
+        .primary-border { border-color: #0CBCD9; }
+        .hover-primary:hover { background-color: #0CBCD9; }
+        .text-primary { color: #0CBCD9; }
+        .bg-primary { background-color: #0CBCD9; }
     </style>
 </head>
-<body class="bg-gray-50">
-    <!-- Navbar -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-               <!-- Logo -->
-                <div class="flex items-center space-x-3">
-                    <!-- Square Icon/Image Box -->
-                    <div
-                        class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center overflow-hidden">
-                        <img src="images/logo1.jpg" alt="Brain Icon" class="w-full h-full object-cover">
-                    </div>
-
-                    <!-- Doctor Name -->
-                    <span class="text-2xl font-bold text-gray-800 tracking-wide">
-                        <img src="images/logo2.png" class="w-20 h-auto" alt="">
-                    </span>
-                </div>
-
-                <div class="flex items-center space-x-6">
-                    <a href="index.html#appointment" class="px-6 py-2 rounded-full font-semibold text-white transition-all hover:shadow-lg pulse-glow" style="background-color: #0EBEDB;">
-                        Consult Today
-                    </a>
-                </div>
-            </div>
+<body class="bg-white text-gray-900">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold primary-color">Dr. Amol Srivastava</a>
+            <a href="index.html" class="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition">
+                <i class="fas fa-arrow-left"></i> Back to Services
+            </a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative py-20 px-4 overflow-hidden bg-gradient-to-br from-blue-50 to-cyan-50">
-        <div class="max-w-6xl mx-auto">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="animate-in-left">
-                    <h1 class="text-5xl md:text-6xl font-bold mb-6" style="color: #0EBEDB;">Gastrointestinal Interventions</h1>
-                    <p class="text-xl text-gray-700 mb-8 leading-relaxed">
-                        Specialized treatment for GI bleeding, obstructions, and cancers. Dr Anmol offers minimally invasive solutions for complex digestive tract conditions.
+    <section class="py-12 md:py-20 bg-gradient-to-br from-white to-blue-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="mb-8">
+                <a href="index.html#services" class="inline-flex items-center gap-2 text-primary font-semibold mb-4 hover:gap-3 transition">
+                    <i class="fas fa-arrow-left text-sm"></i> Services
+                </a>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 items-start">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Gastro & Liver Interventions</h1>
+                    <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+                        Advanced Image-Guided Treatments - We provide specialised, minimally invasive procedures for liver, biliary and gastrointestinal vascular diseases — performed through tiny needle/vascular access under real-time imaging, ensuring faster recovery and better outcomes.
                     </p>
-                    <a href="index.html#appointment" class="inline-block px-8 py-3 rounded-lg font-bold text-white transition-all hover:shadow-xl hover:scale-105" style="background-color: #0EBEDB;">
-                        Schedule Consultation
-                    </a>
                 </div>
-                <div class="animate-in-right hidden md:block">
-                    <div class="relative h-96 bg-white rounded-2xl shadow-2xl overflow-hidden  flex items-center justify-center">
-                        <img src="images/nuroimg.jpg" class="w-full object-cover h-full" alt="">
+                <div class="bg-primary/10 rounded-2xl p-8 border-2 border-primary/20">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-check-circle text-primary text-2xl"></i>
+                        <h3 class="text-lg font-semibold">Treatment Focus</h3>
                     </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-primary mt-1"></i>
+                            <span>Liver & Biliary Disorders</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-primary mt-1"></i>
+                            <span>Portal Hypertension</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-primary mt-1"></i>
+                            <span>GI Bleeding Control</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-primary mt-1"></i>
+                            <span>Vascular Restoration</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-  <section class="py-16 sm:py-20 bg-white dark:bg-gray-900">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-        <div class="text-center mb-12 sm:mb-16">
-            <h2 class="text-4xl sm:text-5xl font-extrabold text-[#FF8C00] dark:text-[#f97316]">
-                🔬 Gastro & Liver Interventions
-            </h2>
-            <p class="mt-4 text-lg text-gray-600 dark:text-gray-400 max-w-4xl mx-auto">
-                We provide specialised, minimally invasive procedures for liver, biliary and gastrointestinal vascular diseases — ensuring faster recovery and better outcomes.
-            </p>
-        </div>
-
-        <div class="grid lg:grid-cols-3 gap-8">
-
-            <div class="group p-8 bg-gray-50 dark:bg-gray-800 rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl border-t-4 border-[#FFD700] dark:border-[#fde047]">
-                <div class="flex items-center mb-5">
-                    <div class="flex-shrink-0 flex items-center justify-center w-14 h-14 rounded-full bg-[#FFD700]/20 text-[#FF8C00] dark:bg-[#fde047]/20 dark:text-[#f97316] mr-4">
-                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 19l4-4 4 4 4-4 4 4m-12-8l-4 4 4 4m-4-4h8"></path></svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Liver & Biliary Procedures</h3>
+    <!-- Procedures Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <!-- Key Liver & Biliary Procedures -->
+            <div class="mb-16">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-1 h-8 bg-primary rounded-full"></div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Key Liver & Biliary Procedures</h2>
                 </div>
-                <ul class="space-y-3 text-sm text-gray-700 dark:text-gray-300">
-                    <li class="flex items-start">
-                        <span class="text-[#1E90FF] dark:text-[#60a5fa] mr-2 text-lg">•</span>
-                        PTBD (Relieves jaundice by clearing blocked bile ducts)
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-[#1E90FF] dark:text-[#60a5fa] mr-2 text-lg">•</span>
-                        TACE / TARE for Liver Tumours (Targeted anti-cancer therapy)
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-[#1E90FF] dark:text-[#60a5fa] mr-2 text-lg">•</span>
-                        Thermal Liver Ablations (Destroys tumours using heat/pulses)
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-[#1E90FF] dark:text-[#60a5fa] mr-2 text-lg">•</span>
-                        GI Bleeding Embolisation (Stops life-threatening bleeding)
-                    </li>
-                </ul>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gradient-to-br from-primary/5 to-blue-50 rounded-2xl p-8 border border-primary/10">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-tube text-white text-lg"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900">PTBD (Percutaneous Transhepatic Biliary Drainage)</h3>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">
+                            Relieves jaundice by clearing blocked bile ducts.
+                        </p>
+                    </div>
+                    <div class="bg-gradient-to-br from-primary/5 to-blue-50 rounded-2xl p-8 border border-primary/10">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-bolt text-white text-lg"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900">TACE / TARE for Liver Tumours</h3>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">
+                            Targeted therapy that delivers anti-cancer drugs or radiation directly to the tumour with minimal effect on the rest of the body.
+                        </p>
+                    </div>
+                    <div class="bg-gradient-to-br from-primary/5 to-blue-50 rounded-2xl p-8 border border-primary/10">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-fire text-white text-lg"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900">Thermal Liver Ablations (RFA/MWA/IRE)</h3>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">
+                            Destroys tumours using heat or electrical pulses without open surgery.
+                        </p>
+                    </div>
+                    <div class="bg-gradient-to-br from-primary/5 to-blue-50 rounded-2xl p-8 border border-primary/10">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-hand-holding-medical text-white text-lg"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900">GI Bleeding Embolisation</h3>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">
+                            Stops life-threatening gastrointestinal bleeding quickly and safely.
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <div class="group p-8 bg-gray-50 dark:bg-gray-800 rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl border-t-4 border-[#1E90FF] dark:border-[#60a5fa]">
-                <div class="flex items-center mb-5">
-                    <div class="flex-shrink-0 flex items-center justify-center w-14 h-14 rounded-full bg-[#1E90FF]/20 text-[#1E90FF] dark:bg-[#60a5fa]/20 dark:text-[#60a5fa] mr-4">
-                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Cirrhosis & Portal Hypertension</h3>
+            <!-- Advanced Cirrhosis Management -->
+            <div class="mb-16">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-1 h-8 bg-primary rounded-full"></div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Advanced Cirrhosis & Portal Hypertension Management</h2>
                 </div>
-                <ul class="space-y-3 text-sm text-gray-700 dark:text-gray-300">
-                    <li class="flex items-start">
-                        <span class="text-[#FF8C00] dark:text-[#f97316] mr-2 text-lg">•</span>
-                        TJLB (Transjugular Liver Biopsy)
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-[#FF8C00] dark:text-[#f97316] mr-2 text-lg">•</span>
-                        HVPG (Hepatic Venous Pressure Gradient) assessment
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-[#FF8C00] dark:text-[#f97316] mr-2 text-lg">•</span>
-                        IVC / Hepatic Vein Stenting for Budd-Chiari
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-[#FF8C00] dark:text-[#f97316] mr-2 text-lg">•</span>
-                        TIPS / DIPS for variceal bleeding & refractory ascites
-                    </li>
-                </ul>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gradient-to-br from-primary/5 to-blue-50 rounded-2xl p-8 border border-primary/10">
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">🔹 TJLB (Transjugular Liver Biopsy)</h3>
+                        <p class="text-gray-700">Safe biopsy for high-risk patients</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-primary/5 to-blue-50 rounded-2xl p-8 border border-primary/10">
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">🔹 HVPG Assessment</h3>
+                        <p class="text-gray-700">Hepatic Venous Pressure Gradient for portal hypertension evaluation</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-primary/5 to-blue-50 rounded-2xl p-8 border border-primary/10">
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">🔹 IVC / Hepatic Vein Stenting</h3>
+                        <p class="text-gray-700">For Budd-Chiari and vascular blockages</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-primary/5 to-blue-50 rounded-2xl p-8 border border-primary/10">
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">🔹 TIPS / DIPS</h3>
+                        <p class="text-gray-700">For uncontrolled variceal bleeding & refractory ascites</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="group p-8 bg-gray-50 dark:bg-gray-800 rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl border-t-4 border-[#3CB371] dark:border-[#4ade80]">
-                <div class="flex items-center mb-5">
-                    <div class="flex-shrink-0 flex items-center justify-center w-14 h-14 rounded-full bg-[#3CB371]/20 text-[#3CB371] dark:bg-[#4ade80]/20 dark:text-[#4ade80] mr-4">
-                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            <!-- Intestinal & Vascular Interventions -->
+            <div class="mb-16">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-1 h-8 bg-primary rounded-full"></div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Intestinal & Vascular Interventions</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gradient-to-br from-primary/5 to-blue-50 rounded-2xl p-8 border border-primary/10">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-heartbeat text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Acute Mesenteric Ischaemia</h3>
+                                <p class="text-gray-700">Rapid diagnosis & vessel opening to save the intestine</p>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Intestinal & Vascular Interventions</h3>
-                </div>
-                <ul class="space-y-3 text-sm text-gray-700 dark:text-gray-300">
-                    <li class="flex items-start">
-                        <span class="text-[#FF8C00] dark:text-[#f97316] mr-2 text-lg">•</span>
-                        Acute Mesenteric Ischaemia (Rapid vessel opening)
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-[#FF8C00] dark:text-[#f97316] mr-2 text-lg">•</span>
-                        Portal Vein Embolisation (PVE) (Increases liver remnant volume before surgery)
-                    </li>
-                </ul>
-                <p class="mt-4 text-xs italic text-gray-500 dark:text-gray-400">
-                    Procedures performed through tiny needle/vascular access under real-time imaging.
-                </p>
-            </div>
-            
-        </div>
-    </div>
-</section>
-
-    <!-- Detailed Procedures -->
-    <section class="py-20 px-4 bg-gray-50">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-4xl font-bold text-center mb-16" style="color: #0EBEDB;">Specialized GI Procedures</h2>
-            
-            <div class="space-y-12">
-                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all">
-                    <h3 class="text-2xl font-bold mb-4" style="color: #0EBEDB;">Emergency GI Bleeding Embolization</h3>
-                    <p class="text-gray-700 mb-4">Life-saving intervention for active GI bleeding:</p>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4 mb-6">
-                        <li>Selective catheterization of bleeding vessel</li>
-                        <li>Angiographic confirmation of bleeding source</li>
-                        <li>Embolization with coils or particles</li>
-                        <li>Success rate >95% for hemostasis</li>
-                        <li>Lower mortality than surgery in elderly patients</li>
-                        <li>Preserves GI continuity</li>
-                    </ul>
-                    <div class="bg-cyan-50 p-4 rounded-lg">
-                        <p class="text-gray-700"><strong>Clinical Note:</strong> Angiographic embolization should be first-line treatment for most GI bleeds, often preventing need for surgery.</p>
+                    <div class="bg-gradient-to-br from-primary/5 to-blue-50 rounded-2xl p-8 border border-primary/10">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-shield-alt text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Portal Vein Embolisation (PVE)</h3>
+                                <p class="text-gray-700">Increases liver remnant volume before surgery</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-
-                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all">
-                    <h3 class="text-2xl font-bold mb-4" style="color: #0EBEDB;">Colonic Obstruction - Stent Placement</h3>
-                    <p class="text-gray-700 mb-4">Minimally invasive relief of large bowel obstruction:</p>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4 mb-6">
-                        <li>Fluoroscopic or endoscopic guidance</li>
-                        <li>Placement of self-expanding metallic stent</li>
-                        <li>Immediate symptom relief (90%+ success)</li>
-                        <li>Bridge to surgery in cancer patients</li>
-                        <li>Can be definitive treatment in select cases</li>
-                        <li>Avoids emergency colostomy</li>
-                    </ul>
-                    <p class="text-gray-700"><strong>Outcome:</strong> Most patients resume normal diet within 24 hours of stent placement.</p>
-                </div>
-
-                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all">
-                    <h3 class="text-2xl font-bold mb-4" style="color: #0EBEDB;">Percutaneous Gastrostomy (PEG) Placement</h3>
-                    <p class="text-gray-700 mb-4">Direct feeding access for patients unable to swallow:</p>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4 mb-6">
-                        <li>Image-guided percutaneous approach</li>
-                        <li>Can be done under moderate sedation</li>
-                        <li>Lasts years with proper care</li>
-                        <li>Better than nasogastric tubes for long-term nutrition</li>
-                        <li>Lower infection rates than surgical approach</li>
-                        <li>Can be easily replaced if dislodged</li>
-                    </ul>
-                    <p class="text-gray-700"><strong>Candidates:</strong> Stroke patients, cancer patients, ALS patients, and others with swallowing dysfunction.</p>
-                </div>
-
-                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all">
-                    <h3 class="text-2xl font-bold mb-4" style="color: #0EBEDB;">Gastrojejunostomy - Access Beyond the Stomach</h3>
-                    <p class="text-gray-700 mb-4">Feeding access directly into small bowel for special cases:</p>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4 mb-6">
-                        <li>Used when gastric feeding not tolerated</li>
-                        <li>Reduced reflux and aspiration risk</li>
-                        <li>Can be combined with gastric decompression</li>
-                        <li>Excellent long-term tolerance</li>
-                    </ul>
-                    <p class="text-gray-700"><strong>Advantage:</strong> Allows feeding in patients with severe reflux or delayed gastric emptying.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Benefits Section -->
-    <section class="py-20 px-4 bg-white">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-4xl font-bold text-center mb-16" style="color: #0EBEDB;">Why Choose Dr Anmol for GI Interventions?</h2>
-            <div class="grid md:grid-cols-2 gap-10">
-                <div class="space-y-6">
-                    <div class="flex items-start space-x-4">
-                        <div class="text-2xl" style="color: #0EBEDB;">⚡</div>
-                        <div>
-                            <h4 class="font-bold text-lg mb-2">Emergency Availability</h4>
-                            <p class="text-gray-700">24/7 coverage for acute GI bleeding and obstructions. Call any time you need intervention.</p>
-                        </div>
+    <section class="py-16 md:py-24 bg-gradient-to-br from-primary/5 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Why Choose Our Gastro Interventions?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-microscope text-white text-2xl"></i>
                     </div>
-                    <div class="flex items-start space-x-4">
-                        <div class="text-2xl" style="color: #0EBEDB;">📉</div>
-                        <div>
-                            <h4 class="font-bold text-lg mb-2">Reduced Mortality</h4>
-                            <p class="text-gray-700">Angiographic treatment of bleeding significantly reduces mortality compared to surgery alone.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start space-x-4">
-                        <div class="text-2xl" style="color: #0EBEDB;">🏥</div>
-                        <div>
-                            <h4 class="font-bold text-lg mb-2">Avoids Surgery</h4>
-                            <p class="text-gray-700">Minimally invasive approach preserves anatomy and function. Lower morbidity rates.</p>
-                        </div>
-                    </div>
+                    <h3 class="text-xl font-bold mb-2">Advanced Technology</h3>
+                    <p class="text-gray-700">State-of-the-art imaging and intervention equipment</p>
                 </div>
-                <div class="space-y-6">
-                    <div class="flex items-start space-x-4">
-                        <div class="text-2xl" style="color: #0EBEDB;">⏱️</div>
-                        <div>
-                            <h4 class="font-bold text-lg mb-2">Fast Recovery</h4>
-                            <p class="text-gray-700">Most patients discharge within 24-48 hours. Resume normal diet quickly with stent placement.</p>
-                        </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-user-md text-white text-2xl"></i>
                     </div>
-                    <div class="flex items-start space-x-4">
-                        <div class="text-2xl" style="color: #0EBEDB;">👨‍⚕️</div>
-                        <div>
-                            <h4 class="font-bold text-lg mb-2">Expert Team</h4>
-                            <p class="text-gray-700">Extensive experience with complex GI pathology and interventional solutions.</p>
-                        </div>
+                    <h3 class="text-xl font-bold mb-2">Expert Team</h3>
+                    <p class="text-gray-700">Specialized expertise in complex liver & GI cases</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-check-circle text-white text-2xl"></i>
                     </div>
-                    <div class="flex items-start space-x-4">
-                        <div class="text-2xl" style="color: #0EBEDB;">🔄</div>
-                        <div>
-                            <h4 class="font-bold text-lg mb-2">Follow-up Care</h4>
-                            <p class="text-gray-700">Comprehensive monitoring and management of feeding tubes and stents.</p>
-                        </div>
-                    </div>
+                    <h3 class="text-xl font-bold mb-2">Proven Results</h3>
+                    <p class="text-gray-700">High success rates with excellent patient outcomes</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="py-20 px-4 bg-gray-50">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-4xl font-bold text-center mb-16" style="color: #0EBEDB;">GI Intervention FAQs</h2>
-            <div class="space-y-6">
-                <details class="group p-6 bg-white rounded-lg cursor-pointer hover:shadow-md transition-all">
-                    <summary class="flex items-center justify-between font-bold text-lg" style="color: #0EBEDB;">
-                        <span>Is angiographic embolization safe?</span>
-                        <span class="transform group-open:rotate-180 transition-transform">↓</span>
-                    </summary>
-                    <p class="mt-4 text-gray-700 leading-relaxed">Yes, embolization is very safe. Complications are rare (<2%) and include temporary vessel damage or bowel ischemia. Benefits far outweigh risks in bleeding emergencies.</p>
-                </details>
-
-                <details class="group p-6 bg-white rounded-lg cursor-pointer hover:shadow-md transition-all">
-                    <summary class="flex items-center justify-between font-bold text-lg" style="color: #0EBEDB;">
-                        <span>How long does a feeding tube last?</span>
-                        <span class="transform group-open:rotate-180 transition-transform">↓</span>
-                    </summary>
-                    <p class="mt-4 text-gray-700 leading-relaxed">With proper care, percutaneous feeding tubes typically last 1-3 years or longer. They can be easily replaced if needed without repeat procedure.</p>
-                </details>
-
-                <details class="group p-6 bg-white rounded-lg cursor-pointer hover:shadow-md transition-all">
-                    <summary class="flex items-center justify-between font-bold text-lg" style="color: #0EBEDB;">
-                        <span>Can colonoscopy stents be used long-term?</span>
-                        <span class="transform group-open:rotate-180 transition-transform">↓</span>
-                    </summary>
-                    <p class="mt-4 text-gray-700 leading-relaxed">Metallic stents can remain long-term, but require monitoring for migration or tissue overgrowth. Regular follow-up endoscopy is recommended.</p>
-                </details>
-
-                <details class="group p-6 bg-white rounded-lg cursor-pointer hover:shadow-md transition-all">
-                    <summary class="flex items-center justify-between font-bold text-lg" style="color: #0EBEDB;">
-                        <span>What's the recovery like after feeding tube placement?</span>
-                        <span class="transform group-open:rotate-180 transition-transform">↓</span>
-                    </summary>
-                    <p class="mt-4 text-gray-700 leading-relaxed">Recovery is minimal. Tube can be used for feeding within 4-6 hours. Patients can be discharged same day or next day with proper care instructions.</p>
-                </details>
+    <!-- CTA Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Need Expert Gastro Intervention?</h2>
+            <p class="text-xl text-gray-700 mb-8">Consult with Dr. Amol Srivastava for advanced liver and GI procedures</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="px-8 py-4 bg-primary text-white font-semibold rounded-full hover:opacity-90 transition flex items-center justify-center gap-2">
+                    <i class="fas fa-phone"></i> Schedule Consultation
+                </button>
+                <button class="px-8 py-4 border-2 border-primary text-primary font-semibold rounded-full hover:bg-primary/10 transition flex items-center justify-center gap-2">
+                    <i class="fas fa-envelope"></i> Contact Us
+                </button>
             </div>
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="py-20 px-4 text-white" style="background-color: #0EBEDB;">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-5xl font-bold mb-8">Need GI Intervention?</h2>
-            <p class="text-xl mb-10 text-cyan-100">Contact Dr Anmol's office for emergency or elective GI intervention procedures.</p>
-            <a href="index.html#appointment" class="inline-block px-8 py-4 rounded-lg font-bold text-lg bg-white text-gray-900 hover:shadow-xl hover:scale-105 transition-all">
-                Book Consultation
-            </a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12 px-4">
-        <div class="max-w-6xl mx-auto">
-            <div class="grid md:grid-cols-3 gap-8 mb-8">
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <div>
-                    <h3 class="font-bold text-lg mb-4" style="color: #0EBEDB;">Dr Anmol</h3>
-                    <p class="text-gray-400">Specialist in Gastrointestinal Interventional Radiology.</p>
+                    <h3 class="text-lg font-bold mb-4">Dr. Amol Srivastava</h3>
+                    <p class="text-gray-400">Gastro & Liver Intervention Specialist</p>
                 </div>
                 <div>
-                    <h4 class="font-bold mb-4">Services</h4>
+                    <h4 class="font-semibold mb-4">Services</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="index.html" class="hover:text-white">Home</a></li>
-                        <li><a href="index.html#services" class="hover:text-white">All Services</a></li>
+                        <li><a href="basic-interventions.html" class="hover:text-primary transition">Basic Interventions</a></li>
+                        <li><a href="gastrointestinal-interventions.html" class="hover:text-primary transition">Gastro Interventions</a></li>
+                        <li><a href="uro-interventions.html" class="hover:text-primary transition">Uro Interventions</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="font-bold mb-4">Contact</h4>
-                    <p class="text-gray-400">
-                        Email: contact@dranmol.com<br>
-                        Phone: +1 (555) 123-4567
-                    </p>
+                    <h4 class="font-semibold mb-4">More</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-primary transition">Thoracic</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Neuro</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Peripheral Vascular</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <p class="text-gray-400 mb-2">Phone: +91 XXXXX XXXXX</p>
+                    <p class="text-gray-400">Email: srivastavaamol95@gmail.com</p>
                 </div>
             </div>
-            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
-                <p>&copy; 2025 Dr Anmol Interventional Radiology. All rights reserved.</p>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Dr. Amol Srivastava. All rights reserved.</p>
             </div>
         </div>
     </footer>

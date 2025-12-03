@@ -3,255 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neuro Interventions - Dr Anmol</title>
+    <title>Neuro Interventions - Dr. Amol Srivastava</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        @keyframes slideInLeft {
-            from {
-                opacity: 0;
-                transform: translateX(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-        @keyframes slideInRight {
-            from {
-                opacity: 0;
-                transform: translateX(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-        @keyframes pulse-glow {
-            0%, 100% {
-                box-shadow: 0 0 0 0 rgba(14, 190, 219, 0.7);
-            }
-            50% {
-                box-shadow: 0 0 0 10px rgba(14, 190, 219, 0);
-            }
-        }
-        .animate-in-up {
-            animation: fadeInUp 0.8s ease-out forwards;
-        }
-        .animate-in-left {
-            animation: slideInLeft 0.8s ease-out forwards;
-        }
-        .animate-in-right {
-            animation: slideInRight 0.8s ease-out forwards;
-        }
-        .pulse-glow {
-            animation: pulse-glow 2s infinite;
-        }
-        .stagger-1 { animation-delay: 0.1s; }
-        .stagger-2 { animation-delay: 0.2s; }
-        .stagger-3 { animation-delay: 0.3s; }
-        .stagger-4 { animation-delay: 0.4s; }
-        .stagger-5 { animation-delay: 0.5s; }
+        .primary-color { color: #0CBCD9; }
+        .primary-bg { background-color: #0CBCD9; }
+        .primary-border { border-color: #0CBCD9; }
+        .hover-primary:hover { background-color: #0CBCD9; }
+        .text-primary { color: #0CBCD9; }
+        .bg-primary { background-color: #0CBCD9; }
     </style>
 </head>
-<body class="bg-gray-50">
-    <!-- Navbar -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <!-- Logo -->
-                <div class="flex items-center space-x-3">
-
-                    <!-- Square Icon/Image Box -->
-                    <div
-                        class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center overflow-hidden">
-                        <img src="images/logo1.jpg" alt="Brain Icon" class="w-full h-full object-cover">
-                    </div>
-
-                    <!-- Doctor Name -->
-                    <span class="text-2xl font-bold text-gray-800 tracking-wide">
-                        <img src="images/logo2.png" class="w-20 h-auto" alt="">
-                    </span>
-
-                </div>
-
-                <div class="flex items-center space-x-6">
-                    <a href="index.html#appointment" class="px-6 py-2 rounded-full font-semibold text-white transition-all hover:shadow-lg pulse-glow" style="background-color: #0EBEDB;">
-                        ConsultToday
-                    </a>
-                </div>
-            </div>
+<body class="bg-white text-gray-900">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold primary-color">Dr. Amol Srivastava</a>
+            <a href="index.html" class="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition">
+                <i class="fas fa-arrow-left"></i> Back to Services
+            </a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative py-20 px-4 overflow-hidden bg-gradient-to-br from-blue-50 to-cyan-50">
-        <div class="max-w-6xl mx-auto">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="animate-in-left">
-                    <h1 class="text-5xl md:text-6xl font-bold mb-6" style="color: #0EBEDB;">Neuro Interventions</h1>
-                    <p class="text-xl text-gray-700 mb-8 leading-relaxed">
-                        Cutting-edge neurological procedures for stroke, aneurysm, and cerebrovascular conditions. Dr Anmol brings expertise in life-saving endovascular interventions.
-                    </p>
-                    <a href="index.html#appointment" class="inline-block px-8 py-3 rounded-lg font-bold text-white transition-all hover:shadow-xl hover:scale-105" style="background-color: #0EBEDB;">
-                        Schedule Consultation
-                    </a>
-                </div>
-                <div class="animate-in-right hidden md:block">
-                    <div class="relative h-96 bg-white rounded-2xl shadow-2xl overflow-hidden  flex items-center justify-center">
-                        <img src="images/nuroimg.jpg" class="w-full object-cover h-full" alt="">
-                    </div>
-                </div>
+    <section class="py-12 md:py-20 bg-gradient-to-br from-white to-blue-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="mb-8">
+                <a href="index.html#services" class="inline-flex items-center gap-2 text-primary font-semibold mb-4 hover:gap-3 transition">
+                    <i class="fas fa-arrow-left text-sm"></i> Services
+                </a>
             </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Neuro Interventional Radiology</h1>
+            <p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-3xl">
+                Our Neuro IR services provide cutting-edge, catheter-based and image-guided treatments for complex brain and spine vascular disorders — reducing the need for open neurosurgery and supporting faster recovery.
+            </p>
         </div>
     </section>
 
-    <!-- Key Services Section -->
-    <section class="py-20 px-4 bg-white">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-4xl font-bold text-center mb-16" style="color: #0EBEDB;">Specialized Neuro Services</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="animate-in-up stagger-1 p-8 rounded-xl bg-gray-50 hover:shadow-lg transition-all">
-                    <div class="text-4xl mb-4">🩸</div>
-                    <h3 class="text-2xl font-bold mb-4">Mechanical Thrombectomy</h3>
-                    <p class="text-gray-700 leading-relaxed">Emergency stroke treatment that removes blood clots from brain arteries. Often successful even when thrombolytics fail. Time-critical intervention for ischemic stroke.</p>
+    <!-- Procedures Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <!-- High-Precision Neurovascular Diagnostics -->
+            <div class="mb-16">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-1 h-8 bg-primary rounded-full"></div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">High-Precision Neurovascular Diagnostics</h2>
                 </div>
-                <div class="animate-in-up stagger-2 p-8 rounded-xl bg-gray-50 hover:shadow-lg transition-all">
-                    <div class="text-4xl mb-4">🔧</div>
-                    <h3 class="text-2xl font-bold mb-4">Aneurysm Coiling</h3>
-                    <p class="text-gray-700 leading-relaxed">Minimally invasive treatment for brain aneurysms. Endovascular coils prevent rupture and bleeding. Alternative to open brain surgery with faster recovery.</p>
-                </div>
-                <div class="animate-in-up stagger-3 p-8 rounded-xl bg-gray-50 hover:shadow-lg transition-all">
-                    <div class="text-4xl mb-4">🔍</div>
-                    <h3 class="text-2xl font-bold mb-4">Cerebral Angiography</h3>
-                    <p class="text-gray-700 leading-relaxed">Detailed imaging of brain blood vessels. Diagnoses aneurysms, stenosis, malformations, and vascular abnormalities with precision.</p>
+                <div class="bg-gradient-to-br from-primary/5 to-blue-50 rounded-2xl p-8 border border-primary/10">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-brain text-white text-lg"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">🔹 Cerebral & Spinal Angiography</h3>
+                            <p class="text-gray-700 leading-relaxed">
+                                Detailed, real-time imaging of brain and spinal blood vessels to detect aneurysms, AVMs, stenosis, vascular malformations and other vascular abnormalities with unmatched accuracy.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Critical Procedures Section -->
-    <section class="py-20 px-4 bg-gray-50">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-4xl font-bold text-center mb-16" style="color: #0EBEDB;">Life-Saving Procedures</h2>
-            
-            <div class="space-y-12">
-                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all border-l-4" style="border-color: #0EBEDB;">
-                    <h3 class="text-3xl font-bold mb-4" style="color: #0EBEDB;">Acute Ischemic Stroke - Mechanical Thrombectomy</h3>
-                    <p class="text-gray-700 mb-4">The most time-sensitive neuro intervention. Every minute counts in stroke treatment. Our team:</p>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4 mb-6">
-                        <li>Responds to emergency calls 24/7/365</li>
-                        <li>Completes thrombectomy within 60 minutes of arrival</li>
-                        <li>Achieves recanalization rates >90% in eligible patients</li>
-                        <li>Reduces disability and improves functional outcomes significantly</li>
-                        <li>Extended window treatment up to 24 hours in select cases</li>
-                    </ul>
-                    <div class="bg-cyan-50 p-4 rounded-lg border-l-4" style="border-color: #0EBEDB;">
-                        <p class="font-bold text-gray-900">Clinical Fact:</p>
-                        <p class="text-gray-700">Mechanical thrombectomy is 3-4 times more effective than clot-busting drugs alone for large vessel occlusions.</p>
+            <!-- Emergency Stroke Treatment -->
+            <div class="mb-16">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-1 h-8 bg-primary rounded-full"></div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Emergency Stroke Treatment</h2>
+                </div>
+                <div class="bg-gradient-to-br from-primary/5 to-blue-50 rounded-2xl p-8 border border-primary/10">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-bolt text-white text-lg"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">🔹 Mechanical Thrombectomy</h3>
+                            <p class="text-gray-700 leading-relaxed">
+                                A time-critical, life-saving procedure that removes a blood clot from a blocked brain artery to restore perfusion, protect brain tissue and improve neurological outcomes.
+                            </p>
+                        </div>
                     </div>
-                </div>
-
-                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all border-l-4" style="border-color: #0EBEDB;">
-                    <h3 class="text-3xl font-bold mb-4" style="color: #0EBEDB;">Subarachnoid Hemorrhage - Aneurysm Coiling</h3>
-                    <p class="text-gray-700 mb-4">Emergency treatment for ruptured brain aneurysms with high mortality risk. We provide:</p>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4 mb-6">
-                        <li>Immediate angiography to locate the source</li>
-                        <li>Endovascular coiling to prevent re-rupture</li>
-                        <li>Advanced coil technologies for complex aneurysms</li>
-                        <li>ICU monitoring during critical recovery period</li>
-                        <li>Follow-up imaging and surveillance protocols</li>
-                    </ul>
-                    <div class="bg-cyan-50 p-4 rounded-lg border-l-4" style="border-color: #0EBEDB;">
-                        <p class="font-bold text-gray-900">Clinical Fact:</p>
-                        <p class="text-gray-700">Endovascular coiling has lower re-rupture rates than traditional surgical clipping with better long-term outcomes.</p>
-                    </div>
-                </div>
-
-                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all border-l-4" style="border-color: #0EBEDB;">
-                    <h3 class="text-3xl font-bold mb-4" style="color: #0EBEDB;">Arteriovenous Malformations (AVM)</h3>
-                    <p class="text-gray-700 mb-4">Abnormal blood vessel connections that can cause bleeding and seizures. Treatment options:</p>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4 mb-6">
-                        <li>Endovascular embolization to reduce AVM size</li>
-                        <li>Preoperative embolization before surgical resection</li>
-                        <li>Multimodal approach combining endovascular and other therapies</li>
-                        <li>Careful flow redirection to prevent normal brain damage</li>
-                    </ul>
-                    <p class="text-gray-700"><strong>Outcome:</strong> Reduces bleeding risk and seizure frequency significantly.</p>
-                </div>
-
-                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all border-l-4" style="border-color: #0EBEDB;">
-                    <h3 class="text-3xl font-bold mb-4" style="color: #0EBEDB;">Cerebral Stenosis Treatment</h3>
-                    <p class="text-gray-700 mb-4">Narrowed brain blood vessels that increase stroke risk. We offer:</p>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4 mb-6">
-                        <li>Percutaneous transluminal angioplasty (PTA)</li>
-                        <li>Stent placement for vessel support</li>
-                        <li>Medical optimization and stroke risk reduction</li>
-                        <li>Long-term imaging surveillance</li>
-                    </ul>
-                    <p class="text-gray-700"><strong>Outcome:</strong> Reduces recurrent stroke risk by 60-70%.</p>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Why Choose Section -->
-    <section class="py-20 px-4 bg-white">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-4xl font-bold text-center mb-16" style="color: #0EBEDB;">Why Dr Anmol for Neuro Interventions?</h2>
-            <div class="grid md:grid-cols-2 gap-10">
-                <div class="space-y-6">
-                    <div class="flex items-start space-x-4">
-                        <div class="text-2xl" style="color: #0EBEDB;">⚡</div>
-                        <div>
-                            <h4 class="font-bold text-lg mb-2">24/7 Emergency Response</h4>
-                            <p class="text-gray-700">Always available for time-critical stroke and hemorrhage interventions. Minutes matter in neuro emergencies.</p>
+            <!-- Aneurysm & AVM Management -->
+            <div class="mb-16">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-1 h-8 bg-primary rounded-full"></div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Aneurysm & Arteriovenous Malformation Management</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gradient-to-br from-primary/5 to-blue-50 rounded-2xl p-8 border border-primary/10">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-coil text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Aneurysm Coiling</h3>
+                                <p class="text-gray-700">
+                                    Minimally invasive, catheter-based treatment that seals brain aneurysms from within to prevent rupture and life-threatening bleeding.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="flex items-start space-x-4">
-                        <div class="text-2xl" style="color: #0EBEDB;">🧠</div>
-                        <div>
-                            <h4 class="font-bold text-lg mb-2">Specialized Expertise</h4>
-                            <p class="text-gray-700">Fellowship-trained in neuro interventional radiology with extensive experience in complex cases.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start space-x-4">
-                        <div class="text-2xl" style="color: #0EBEDB;">🏥</div>
-                        <div>
-                            <h4 class="font-bold text-lg mb-2">State-of-the-Art Equipment</h4>
-                            <p class="text-gray-700">Latest angiography systems, neuro-monitoring devices, and intervention tools for optimal outcomes.</p>
+                    <div class="bg-gradient-to-br from-primary/5 to-blue-50 rounded-2xl p-8 border border-primary/10">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-check-circle text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Carotid-Cavernous Fistula (CCF) Embolisation</h3>
+                                <p class="text-gray-700">
+                                    Closes abnormal connections between the carotid artery and cavernous sinus to relieve symptoms.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="space-y-6">
-                    <div class="flex items-start space-x-4">
-                        <div class="text-2xl" style="color: #0EBEDB;">📊</div>
-                        <div>
-                            <h4 class="font-bold text-lg mb-2">Excellent Outcomes</h4>
-                            <p class="text-gray-700">Proven track record with high success rates and low complication rates across all neuro procedures.</p>
+            </div>
+
+            <!-- Stroke Prevention & Vessel Restoration -->
+            <div class="mb-16">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-1 h-8 bg-primary rounded-full"></div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Stroke Prevention & Vessel Restoration</h2>
+                </div>
+                <div class="bg-gradient-to-br from-primary/5 to-blue-50 rounded-2xl p-8 border border-primary/10">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-shield-alt text-white text-lg"></i>
                         </div>
-                    </div>
-                    <div class="flex items-start space-x-4">
-                        <div class="text-2xl" style="color: #0EBEDB;">👥</div>
                         <div>
-                            <h4 class="font-bold text-lg mb-2">Multidisciplinary Team</h4>
-                            <p class="text-gray-700">Works closely with neurosurgery, neurology, ICU, and stroke specialists for comprehensive care.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start space-x-4">
-                        <div class="text-2xl" style="color: #0EBEDB;">🔄</div>
-                        <div>
-                            <h4 class="font-bold text-lg mb-2">Follow-up Care</h4>
-                            <p class="text-gray-700">Comprehensive post-intervention monitoring and long-term management for best patient outcomes.</p>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">🔹 Intracranial Angioplasty & Stenting</h3>
+                            <p class="text-gray-700 leading-relaxed">
+                                Opens narrowed brain arteries to prevent recurrent stroke in selected patients with intracranial atherosclerotic disease.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -259,82 +145,91 @@
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="py-20 px-4 bg-gray-50">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-4xl font-bold text-center mb-16" style="color: #0EBEDB;">Neuro Intervention FAQs</h2>
-            <div class="space-y-6">
-                <details class="group p-6 bg-white rounded-lg cursor-pointer hover:shadow-md transition-all">
-                    <summary class="flex items-center justify-between font-bold text-lg" style="color: #0EBEDB;">
-                        <span>How quickly is mechanical thrombectomy performed?</span>
-                        <span class="transform group-open:rotate-180 transition-transform">↓</span>
-                    </summary>
-                    <p class="mt-4 text-gray-700 leading-relaxed">Our team aims to complete thrombectomy within 60 minutes of hospital arrival in acute stroke. This "door-to-reperfusion" time is critical for patient outcomes.</p>
-                </details>
-
-                <details class="group p-6 bg-white rounded-lg cursor-pointer hover:shadow-md transition-all">
-                    <summary class="flex items-center justify-between font-bold text-lg" style="color: #0EBEDB;">
-                        <span>What is the success rate of aneurysm coiling?</span>
-                        <span class="transform group-open:rotate-180 transition-transform">↓</span>
-                    </summary>
-                    <p class="mt-4 text-gray-700 leading-relaxed">Success rates exceed 90% for aneurysm coiling. Most aneurysms are effectively sealed on first attempt. Re-rupture rates are significantly lower than with surgical clipping.</p>
-                </details>
-
-                <details class="group p-6 bg-white rounded-lg cursor-pointer hover:shadow-md transition-all">
-                    <summary class="flex items-center justify-between font-bold text-lg" style="color: #0EBEDB;">
-                        <span>What are the complications of neuro interventions?</span>
-                        <span class="transform group-open:rotate-180 transition-transform">↓</span>
-                    </summary>
-                    <p class="mt-4 text-gray-700 leading-relaxed">Complications are rare (less than 5%) and include vessel dissection, emboli, or contrast reaction. Our experienced team takes precautions to minimize these risks. Benefits far outweigh risks in emergency situations.</p>
-                </details>
-
-                <details class="group p-6 bg-white rounded-lg cursor-pointer hover:shadow-md transition-all">
-                    <summary class="flex items-center justify-between font-bold text-lg" style="color: #0EBEDB;">
-                        <span>How long is hospital stay after neuro intervention?</span>
-                        <span class="transform group-open:rotate-180 transition-transform">↓</span>
-                    </summary>
-                    <p class="mt-4 text-gray-700 leading-relaxed">Acute stroke thrombectomy patients typically stay 2-5 days for monitoring. Aneurysm coiling patients may need 3-7 days ICU monitoring. Length varies based on individual condition and complications.</p>
-                </details>
+    <!-- Benefits Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-primary/5 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Why Neuro Interventional Radiology?</h2>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-lightbulb text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Advanced Technology</h3>
+                    <p class="text-gray-700 text-sm">Cutting-edge imaging and intervention</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-bolt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Quick Response</h3>
+                    <p class="text-gray-700 text-sm">Time-critical emergency treatment</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-brain text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Brain Protection</h3>
+                    <p class="text-gray-700 text-sm">Preserve neurological function</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-check-circle text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Proven Results</h3>
+                    <p class="text-gray-700 text-sm">High success in complex cases</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="py-20 px-4 text-white" style="background-color: #0EBEDB;">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-5xl font-bold mb-8">Emergency or Consultation?</h2>
-            <p class="text-xl mb-10 text-cyan-100">For emergency stroke or hemorrhage, call 911. For consultations or non-emergency concerns, schedule with Dr Anmol.</p>
-            <a href="index.html#appointment" class="inline-block px-8 py-4 rounded-lg font-bold text-lg bg-white text-gray-900 hover:shadow-xl hover:scale-105 transition-all">
-                Schedule Consultation
-            </a>
+    <!-- Emergency CTA Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Expert Neuro Care</h2>
+            <p class="text-xl text-gray-700 mb-8">Specialized treatment for brain and spine vascular disorders</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="px-8 py-4 bg-primary text-white font-semibold rounded-full hover:opacity-90 transition flex items-center justify-center gap-2">
+                    <i class="fas fa-phone"></i> Emergency Line
+                </button>
+                <button class="px-8 py-4 border-2 border-primary text-primary font-semibold rounded-full hover:bg-primary/10 transition flex items-center justify-center gap-2">
+                    <i class="fas fa-envelope"></i> Consult Doctor
+                </button>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12 px-4">
-        <div class="max-w-6xl mx-auto">
-            <div class="grid md:grid-cols-3 gap-8 mb-8">
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <div>
-                    <h3 class="font-bold text-lg mb-4" style="color: #0EBEDB;">Dr Anmol</h3>
-                    <p class="text-gray-400">Specialist in Neuro Interventional Radiology and cerebrovascular care.</p>
+                    <h3 class="text-lg font-bold mb-4">Dr. Amol Srivastava</h3>
+                    <p class="text-gray-400">Neuro Intervention Specialist</p>
                 </div>
                 <div>
-                    <h4 class="font-bold mb-4">Services</h4>
+                    <h4 class="font-semibold mb-4">Services</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="index.html" class="hover:text-white">Home</a></li>
-                        <li><a href="index.html#services" class="hover:text-white">All Services</a></li>
+                        <li><a href="basic-interventions.html" class="hover:text-primary transition">Basic</a></li>
+                        <li><a href="gastrointestinal-interventions.html" class="hover:text-primary transition">Gastro</a></li>
+                        <li><a href="neuro-interventions.html" class="hover:text-primary transition">Neuro</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="font-bold mb-4">Emergency</h4>
-                    <p class="text-gray-400">
-                        Call 911 for stroke<br>
-                        Phone: +1 (555) 123-4567
-                    </p>
+                    <h4 class="font-semibold mb-4">More Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-primary transition">Vascular</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Thoracic</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Urological</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <p class="text-gray-400 mb-2">Phone: +91 XXXXX XXXXX</p>
+                    <p class="text-gray-400">Email: srivastavaamol95@gmail.com</p>
                 </div>
             </div>
-            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
-                <p>&copy; 2025 Dr Anmol Interventional Radiology. All rights reserved.</p>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Dr. Amol Srivastava. All rights reserved.</p>
             </div>
         </div>
     </footer>

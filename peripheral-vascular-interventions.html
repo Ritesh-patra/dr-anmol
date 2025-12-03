@@ -3,227 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peripheral Vascular Interventions - Dr Anmol</title>
+    <title>Peripheral Vascular Interventions - Dr. Amol Srivastava</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        @keyframes pulse-glow {
-            0%, 100% {
-                box-shadow: 0 0 0 0 rgba(14, 190, 219, 0.7);
-            }
-            50% {
-                box-shadow: 0 0 0 10px rgba(14, 190, 219, 0);
-            }
-        }
-        .animate-in-up {
-            animation: fadeInUp 0.8s ease-out forwards;
-        }
-        .pulse-glow {
-            animation: pulse-glow 2s infinite;
-        }
-        .stagger-1 { animation-delay: 0.1s; }
-        .stagger-2 { animation-delay: 0.2s; }
-        .stagger-3 { animation-delay: 0.3s; }
+        .primary-color { color: #0CBCD9; }
+        .primary-bg { background-color: #0CBCD9; }
+        .primary-border { border-color: #0CBCD9; }
+        .hover-primary:hover { background-color: #0CBCD9; }
+        .text-primary { color: #0CBCD9; }
+        .bg-primary { background-color: #0CBCD9; }
     </style>
 </head>
-<body class="bg-gray-50">
-    <!-- Navbar -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <!-- Logo -->
-                <div class="flex items-center space-x-3">
-
-                    <!-- Square Icon/Image Box -->
-                    <div
-                        class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center overflow-hidden">
-                        <img src="images/logo1.jpg" alt="Brain Icon" class="w-full h-full object-cover">
-                    </div>
-
-                    <!-- Doctor Name -->
-                    <span class="text-2xl font-bold text-gray-800 tracking-wide">
-                        <img src="images/logo2.png" class="w-20 h-auto" alt="">
-                    </span>
-
-                </div>
-
-                <div class="flex items-center space-x-6">
-                    <a href="index.html#appointment" class="px-6 py-2 rounded-full font-semibold text-white transition-all hover:shadow-lg pulse-glow" style="background-color: #0EBEDB;">
-                        Consult Today
-                    </a>
-                </div>
-            </div>
+<body class="bg-white text-gray-900">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold primary-color">Dr. Amol Srivastava</a>
+            <a href="index.html" class="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition">
+                <i class="fas fa-arrow-left"></i> Back to Services
+            </a>
         </div>
     </nav>
 
-    <!-- Hero -->
-    <!-- Hero -->
-<section class="py-20 px-4 bg-gradient-to-br from-blue-50 to-cyan-50">
-    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-
-        <!-- Left Content -->
-        <div class="animate-in-up">
-            <h1 class="text-5xl md:text-6xl font-bold mb-6" style="color: #0EBEDB;">
-                Peripheral Vascular Interventions
-            </h1>
-            <p class="text-xl text-gray-700 mb-8 leading-relaxed">
-                Treatment of peripheral artery disease, venous conditions, and limb-threatening ischemia. 
-                Expert minimally invasive vascular interventions.
-            </p>
-            <a href="index.html#appointment"
-                class="inline-block px-8 py-3 rounded-lg font-bold text-white transition-all hover:shadow-xl hover:scale-105"
-                style="background-color: #0EBEDB;">
-                Schedule Consultation
-            </a>
-        </div>
-
-        <!-- Right Image -->
-        <div class="flex justify-center animate-in-up stagger-1">
-            <img src="images/viclur.png" alt="Peripheral Vascular Interventions"
-                class="w-full max-w-md rounded-xl shadow-lg">
-        </div>
-
-    </div>
-</section>
-
-
-    <!-- Services -->
-   <section class="py-16 sm:py-20 bg-white dark:bg-gray-900">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-        <div class="text-center mb-12 sm:mb-16">
-            <h2 class="text-4xl sm:text-5xl font-extrabold text-[#DC3545] dark:text-[#f87171]">
-                ❤️ Peripheral Vascular Interventions
-            </h2>
-            <p class="mt-4 text-lg text-gray-600 dark:text-gray-400 max-w-4xl mx-auto">
-                Peripheral vascular diseases affect the blood vessels outside the heart and brain. We provide minimally invasive, image-guided treatments to restore blood flow, relieve symptoms, and prevent limb-threatening complications.
+    <!-- Hero Section -->
+    <section class="py-12 md:py-20 bg-gradient-to-br from-white to-blue-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="mb-8">
+                <a href="index.html#services" class="inline-flex items-center gap-2 text-primary font-semibold mb-4 hover:gap-3 transition">
+                    <i class="fas fa-arrow-left text-sm"></i> Services
+                </a>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Peripheral Vascular Interventions</h1>
+            <p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-3xl">
+                Peripheral vascular diseases affect the blood vessels outside the heart and brain and can lead to decreased circulation, leg pain, swelling, and non-healing wounds. We provide minimally invasive, image-guided treatments to restore blood flow, relieve symptoms and prevent limb-threatening complications.
             </p>
         </div>
+    </section>
 
-        <div class="grid lg:grid-cols-3 gap-8">
-
-            <div class="group p-8 bg-gray-50 dark:bg-gray-800 rounded-2xl shadow-xl transition-all duration-300 transform hover:scale-[1.03] hover:shadow-2xl border-t-4 border-[#DC3545] dark:border-[#f87171]">
-                <div class="flex items-center mb-5">
-                    <div class="flex-shrink-0 flex items-center justify-center w-14 h-14 rounded-full bg-[#DC3545]/20 text-[#DC3545] dark:bg-[#f87171]/20 dark:text-[#f87171] mr-4">
-                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Limb-Saving Arterial Interventions</h3>
+    <!-- Procedures Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <!-- Limb-Saving Arterial Interventions -->
+            <div class="mb-16">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-1 h-8 bg-primary rounded-full"></div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Limb-Saving Arterial Interventions</h2>
                 </div>
-                <ul class="space-y-3 text-sm text-gray-700 dark:text-gray-300">
-                    <li class="flex items-start">
-                        <span class="text-[#1E90FF] dark:text-[#60a5fa] mr-2 text-lg">•</span>
-                        Angioplasty & Stent Placement
-                    </li>
-                    <li class="text-xs italic pl-4">Opens blocked arteries to improve walking distance, reduce pain, and prevent amputation.</li>
-                    <li class="flex items-start">
-                        <span class="text-[#1E90FF] dark:text-[#60a5fa] mr-2 text-lg">•</span>
-                        Drug-Coated Balloon / Atherectomy & Advanced Endovascular Therapies
-                    </li>
-                </ul>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gradient-to-br from-primary/5 to-blue-50 rounded-2xl p-8 border border-primary/10">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-stethoscope text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Angioplasty & Stent Placement</h3>
+                                <p class="text-gray-700">
+                                    Opens narrowed or blocked arteries in the legs to improve walking distance, reduce pain, and prevent amputation.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-br from-primary/5 to-blue-50 rounded-2xl p-8 border border-primary/10">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-droplet text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Drug-Coated Balloon / Atherectomy</h3>
+                                <p class="text-gray-700">
+                                    Used in select cases to improve long-term vessel patency and wound healing.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="group p-8 bg-gray-50 dark:bg-gray-800 rounded-2xl shadow-xl transition-all duration-300 transform hover:scale-[1.03] hover:shadow-2xl border-t-4 border-[#1E90FF] dark:border-[#60a5fa]">
-                <div class="flex items-center mb-5">
-                    <div class="flex-shrink-0 flex items-center justify-center w-14 h-14 rounded-full bg-[#1E90FF]/20 text-[#1E90FF] dark:bg-[#60a5fa]/20 dark:text-[#60a5fa] mr-4">
-                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.111a9.004 9.004 0 011.96 4.318A9.002 9.002 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6h.75M16.5 7.5l-3-3m0 0l-3 3m3-3v8.25"></path></svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Venous & Varicose Vein Care</h3>
+            <!-- Venous & Varicose Vein Care -->
+            <div class="mb-16">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-1 h-8 bg-primary rounded-full"></div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Venous & Varicose Vein Care</h2>
                 </div>
-                <ul class="space-y-3 text-sm text-gray-700 dark:text-gray-300">
-                    <li class="flex items-start">
-                        <span class="text-[#DC3545] dark:text-[#f87171] mr-2 text-lg">•</span>
-                        Targeted Therapies for Varicose & Refluxing Veins
-                    </li>
-                    <li class="text-xs italic pl-4">Minimally invasive embolisation/ablation techniques relieve pain, swelling, heaviness and cosmetic concerns without surgical stripping.</li>
-                </ul>
+                <div class="bg-gradient-to-br from-primary/5 to-blue-50 rounded-2xl p-8 border border-primary/10">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-wind text-white text-lg"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">🔹 Targeted Therapies for Varicose & Refluxing Veins</h3>
+                            <p class="text-gray-700 leading-relaxed">
+                                Minimally invasive embolisation/ablation techniques relieve pain, swelling, heaviness and cosmetic concerns without surgical stripping.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="group p-8 bg-gray-50 dark:bg-gray-800 rounded-2xl shadow-xl transition-all duration-300 transform hover:scale-[1.03] hover:shadow-2xl border-t-4 border-[#FFC107] dark:border-[#facc15]">
-                <div class="flex items-center mb-5">
-                    <div class="flex-shrink-0 flex items-center justify-center w-14 h-14 rounded-full bg-[#FFC107]/20 text-[#FFC107] dark:bg-[#facc15]/20 dark:text-[#facc15] mr-4">
-                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21.666V12m0 0l-3.25 3.25M12 12l3.25 3.25M7 16l-3-3m3 3l3-3m-3 3l3-3m-3 3l3-3"></path></svg>
+            <!-- Wound & Foot Salvage -->
+            <div class="mb-16">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-1 h-8 bg-primary rounded-full"></div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Wound & Foot Salvage for Diabetic Patients</h2>
+                </div>
+                <div class="bg-gradient-to-br from-primary/5 to-blue-50 rounded-2xl p-8 border border-primary/10">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-heart-pulse text-white text-lg"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">🔹 Endovascular Revascularisation</h3>
+                            <p class="text-gray-700 leading-relaxed">
+                                Restores circulation to help heal chronic ulcers and non-healing diabetic foot wounds, reducing the need for amputation.
+                            </p>
+                        </div>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Wound & Foot Salvage (Diabetic Patients)</h3>
-                </div>
-                <ul class="space-y-3 text-sm text-gray-700 dark:text-gray-300">
-                    <li class="flex items-start">
-                        <span class="text-[#DC3545] dark:text-[#f87171] mr-2 text-lg">•</span>
-                        Endovascular Revascularisation
-                    </li>
-                    <li class="text-xs italic pl-4">Restores circulation to help heal chronic ulcers and non-healing diabetic foot wounds, reducing the need for amputation.</li>
-                </ul>
-            </div>
-            
-        </div>
-    </div>
-</section>
-
-    <!-- Procedures -->
-    <section class="py-20 px-4 bg-gray-50">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-4xl font-bold text-center mb-16" style="color: #0EBEDB;">Detailed Procedures</h2>
-            
-            <div class="space-y-12">
-                <div class="bg-white p-8 rounded-xl shadow-md">
-                    <h3 class="text-2xl font-bold mb-4" style="color: #0EBEDB;">Lower Extremity Angioplasty</h3>
-                    <p class="text-gray-700 mb-4">Treatment of peripheral artery disease preventing amputation:</p>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4 mb-4">
-                        <li>Restores blood flow to legs</li>
-                        <li>Relieves claudication and pain</li>
-                        <li>Preserves limbs from amputation</li>
-                        <li>Success rates >90%</li>
-                    </ul>
-                </div>
-
-                <div class="bg-white p-8 rounded-xl shadow-md">
-                    <h3 class="text-2xl font-bold mb-4" style="color: #0EBEDB;">Arteriovenous Fistula (AVF) Creation</h3>
-                    <p class="text-gray-700 mb-4">Access creation for dialysis patients:</p>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4 mb-4">
-                        <li>Percutaneous technique avoids surgery</li>
-                        <li>High blood flow for dialysis</li>
-                        <li>Lasts years with proper care</li>
-                        <li>Lower infection rates</li>
-                    </ul>
-                </div>
-
-                <div class="bg-white p-8 rounded-xl shadow-md">
-                    <h3 class="text-2xl font-bold mb-4" style="color: #0EBEDB;">Deep Vein Thrombosis (DVT) Treatment</h3>
-                    <p class="text-gray-700 mb-4">Management of blood clots in legs and arms:</p>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700 ml-4 mb-4">
-                        <li>Mechanical thrombectomy or thrombolysis</li>
-                        <li>Prevents pulmonary embolism</li>
-                        <li>Reduces post-thrombotic syndrome</li>
-                        <li>Faster recovery than anticoagulation alone</li>
-                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA -->
-    <section class="py-20 px-4 text-white" style="background-color: #0EBEDB;">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-5xl font-bold mb-8">Vascular Issues?</h2>
-            <p class="text-xl mb-10 text-cyan-100">Expert peripheral vascular intervention awaits.</p>
-            <a href="index.html#appointment" class="inline-block px-8 py-4 rounded-lg font-bold text-lg bg-white text-gray-900 hover:shadow-xl hover:scale-105 transition-all">
-                Book Now
-            </a>
+    <!-- Benefits Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-primary/5 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Benefits of Vascular Interventions</h2>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-person-hiking text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Limb Preservation</h3>
+                    <p class="text-gray-700 text-sm">Avoid amputation</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clock text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Quick Recovery</h3>
+                    <p class="text-gray-700 text-sm">Return to mobility fast</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-smile text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Pain Relief</h3>
+                    <p class="text-gray-700 text-sm">Reduced symptoms</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-check-circle text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Proven Success</h3>
+                    <p class="text-gray-700 text-sm">High healing rates</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Save Your Limbs</h2>
+            <p class="text-xl text-gray-700 mb-8">Expert vascular intervention to restore circulation and prevent amputation</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="px-8 py-4 bg-primary text-white font-semibold rounded-full hover:opacity-90 transition flex items-center justify-center gap-2">
+                    <i class="fas fa-phone"></i> Schedule Consultation
+                </button>
+                <button class="px-8 py-4 border-2 border-primary text-primary font-semibold rounded-full hover:bg-primary/10 transition flex items-center justify-center gap-2">
+                    <i class="fas fa-envelope"></i> Learn More
+                </button>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12 px-4">
-        <div class="max-w-6xl mx-auto text-center text-gray-400">
-            <p>&copy; 2025 Dr Anmol Interventional Radiology. All rights reserved.</p>
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Dr. Amol Srivastava</h3>
+                    <p class="text-gray-400">Vascular Intervention Specialist</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="basic-interventions.html" class="hover:text-primary transition">Basic</a></li>
+                        <li><a href="gastrointestinal-interventions.html" class="hover:text-primary transition">Gastro</a></li>
+                        <li><a href="peripheral-vascular-interventions.html" class="hover:text-primary transition">Vascular</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">More Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-primary transition">Neuro</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Thoracic</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Urological</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <p class="text-gray-400 mb-2">Phone: +91 XXXXX XXXXX</p>
+                    <p class="text-gray-400">Email: srivastavaamol95@gmail.com</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Dr. Amol Srivastava. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 </body>
