@@ -1129,7 +1129,7 @@
                     </div>
 
                     <div class="absolute bottom-0 left-0 right-0 p-6 text-white flex items-center justify-between">
-                        <h3 class="text-2xl font-bold">Penpheral Vascular</h3>
+                        <h3 class="text-2xl font-bold">Peripheral Vascular</h3>
                         <button class="bg-white rounded-full p-2 hover:bg-gray-100 transition">
                             <i class="fas fa-arrow-right text-gray-800"></i>
                         </button>
@@ -1212,11 +1212,6 @@
             </div>
         </div>
     </section>
-
-
-
-
-
 
     <!-- Dr. Amol Advanced Care Section -->
     <section class="py-5 md:py-5 bg-gray-50">
@@ -1785,9 +1780,9 @@
                     <p class="text-gray-400 text-sm mb-4 md:mb-0"><i class="fas fa-copyright mr-1"></i> 2025 Dr. Amol.
                         All rights reserved.</p>
                     <div class="flex space-x-6 text-sm">
-                        <a href="#" class="hover:text-pink-500 transition">Privacy Policy</a>
-                        <a href="#" class="hover:text-pink-500 transition">Terms of Service</a>
-                        <a href="#" class="hover:text-pink-500 transition">Cookie Policy</a>
+                        <a href="privacy.html" class="hover:text-pink-500 transition">Privacy Policy</a>
+                        <a href="terms.html" class="hover:text-pink-500 transition">Terms of Service</a>
+                        <a href="cookie-policy.html" class="hover:text-pink-500 transition">Cookie Policy</a>
                     </div>
                 </div>
             </div>
@@ -2125,6 +2120,11 @@
                 // Append the card to the container
                 container.appendChild(card);
             });
+        }
+
+        // Render the publications into the container if present
+        if (container) {
+            renderPublications();
         }
 
         document.addEventListener("DOMContentLoaded", function () {
