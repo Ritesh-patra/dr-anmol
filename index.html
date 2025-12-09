@@ -136,26 +136,66 @@
             -ms-overflow-style: none;
             scrollbar-width: none;
         }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            /* Slightly visible white background */
+            backdrop-filter: blur(10px);
+            /* The main blur effect */
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            /* Light border */
+        }
+
+        /* Subtle glow border on hover (inspired by the design) */
+        .glass-card:hover {
+            box-shadow: 0 0 15px rgba(165, 180, 252, 0.5), 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+
+        .light-card {
+            background-color: #f9fafb;
+            border: 1px solid #e5e7eb;
+            transition: all 0.3s ease;
+        }
+
+        .light-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Utility to clamp text to 3 lines */
+        .line-clamp-3 {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            height: 5rem;
+            /* Fixed height for consistency */
+        }
+
+         #publications-container::-webkit-scrollbar {
+        display: none;
+    }
     </style>
 </head>
 
 <body class="bg-white">
 
     <!-- Navigation -->
-    <nav class="sticky top-0 z-50 bg-[#F6F6F6] shadow-md">
+    <nav class="sticky top-0 z-50 bg-[#FFFFFF] shadow-md">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
                 <div class="flex items-center space-x-3">
 
                     <!-- Square Icon/Image Box -->
-                    <div class="w-12 h-12  rounded-xl flex items-center justify-center overflow-hidden">
+                    <!-- <div class="w-12 h-12  rounded-xl flex items-center justify-center overflow-hidden">
                         <img src="images/logo1.jpg" alt="Brain Icon" class="w-full h-full object-cover">
-                    </div>
+                    </div> -->
 
                     <!-- Doctor Name -->
                     <span class="text-2xl font-bold text-gray-800 tracking-wide">
-                        <img src="images/logo2.png" class="w-20 h-auto" alt="">
+                        <img src="images/new logo .jpg" class="w-32 h-auto" alt="">
                     </span>
 
                 </div>
@@ -226,6 +266,164 @@
     <!-- Hero Section -->
     <section id="home" class="text-white py-0 relative overflow-hidden">
         <!-- <div class="absolute inset-0 bg-cover bg-center opacity-20"></div> -->
+        <!-- Day-care Procedures — 7 Compact Icon Cards -->
+        <section class="absolute top-5 left-1/2 -translate-x-1/2 w-full max-w-7xl px-4 z-30 text-black">
+
+            <div class="flex gap-4 overflow-x-auto pb-4 no-scrollbar">
+
+                <!-- SINGLE CARD TEMPLATE -->
+                <div class="relative group min-w-[230px]">
+                    <div class="bg-white border p-4 rounded-xl shadow transition-all duration-300 cursor-pointer 
+                       group-hover:h-auto h-[80px] overflow-hidden">
+
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-12 h-12 rounded-full bg-indigo-50 text-indigo-600 flex items-center justify-center text-2xl">
+                                <i class="ri-heart-pulse-line"></i>
+                            </div>
+                            <h3 class="font-semibold text-base">VARICOSE VEIN</h3>
+                        </div>
+
+                        <!-- DESCRIPTION -->
+                        <p
+                            class="opacity-0 group-hover:opacity-100 text-gray-700 text-xs mt-2 transition-opacity duration-300">
+                            LASER ABLATION AND VENASEAL GLUE ABLATION
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- CARD -->
+                <div class="relative group min-w-[230px]">
+                    <div class="bg-white border p-4 rounded-xl shadow transition-all duration-300 cursor-pointer 
+                       group-hover:h-auto h-[80px] overflow-hidden">
+
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-12 h-12 rounded-full bg-pink-50 text-pink-600 flex items-center justify-center text-2xl">
+                                <i class="ri-user-heart-line"></i>
+                            </div>
+                            <h3 class="font-semibold text-base">VARICOCELE</h3>
+                        </div>
+
+                        <p
+                            class="opacity-0 group-hover:opacity-100 text-gray-700 text-xs mt-2 transition-opacity duration-300">
+                            VARICOCELE EMBOLISATION
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- CARD -->
+                <div class="relative group min-w-[230px]">
+                    <div class="bg-white border p-4 rounded-xl shadow transition-all duration-300 cursor-pointer 
+                       group-hover:h-auto h-[80px] overflow-hidden">
+
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-12 h-12 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center text-2xl">
+                                <i class="ri-women-line"></i>
+                            </div>
+                            <h3 class="font-semibold text-base">UTERINE FIBROID</h3>
+                        </div>
+
+                        <p
+                            class="opacity-0 group-hover:opacity-100 text-gray-700 text-xs mt-2 transition-opacity duration-300">
+                            UTERINE ARTERY EMBOLISATION
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- CARD -->
+                <div class="relative group min-w-[230px]">
+                    <div class="bg-white border p-4 rounded-xl shadow transition-all duration-300 cursor-pointer 
+                       group-hover:h-auto h-[80px] overflow-hidden">
+
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-12 h-12 rounded-full bg-yellow-50 text-yellow-600 flex items-center justify-center text-2xl">
+                                <i class="ri-run-line"></i>
+                            </div>
+                            <h3 class="font-semibold text-base">KNEE PAIN</h3>
+                        </div>
+
+                        <p
+                            class="opacity-0 group-hover:opacity-100 text-gray-700 text-xs mt-2 transition-opacity duration-300">
+                            GENICULAR ARTERY EMBOLISATION
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- CARD -->
+                <div class="relative group min-w-[230px]">
+                    <div class="bg-white border p-4 rounded-xl shadow transition-all duration-300 cursor-pointer 
+                       group-hover:h-auto h-[80px] overflow-hidden">
+
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-12 h-12 rounded-full bg-sky-50 text-sky-600 flex items-center justify-center text-2xl">
+                                <i class="ri-hospital-line"></i>
+                            </div>
+                            <h3 class="font-semibold text-base">ENLARGED PROSTATE</h3>
+                        </div>
+
+                        <p
+                            class="opacity-0 group-hover:opacity-100 text-gray-700 text-xs mt-2 transition-opacity duration-300">
+                            PROSTATE ARTERY EMBOLISATION
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- CARD -->
+                <div class="relative group min-w-[230px]">
+                    <div class="bg-white border p-4 rounded-xl shadow transition-all duration-300 cursor-pointer 
+                       group-hover:h-auto h-[80px] overflow-hidden">
+
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-12 h-12 rounded-full bg-rose-50 text-rose-600 flex items-center justify-center text-2xl">
+                                <i class="ri-nurse-line"></i>
+                            </div>
+                            <h3 class="font-semibold text-base">THYROID NODULE & GOITRE</h3>
+                        </div>
+
+                        <p
+                            class="opacity-0 group-hover:opacity-100 text-gray-700 text-xs mt-2 transition-opacity duration-300">
+                            THYROID ABLATION AND THYROID ARTERY EMBOLISATION
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- CARD -->
+                <div class="relative group min-w-[230px]">
+                    <div class="bg-white border p-4 rounded-xl shadow transition-all duration-300 cursor-pointer 
+                       group-hover:h-auto h-[80px] overflow-hidden">
+
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-12 h-12 rounded-full bg-violet-50 text-violet-600 flex items-center justify-center text-2xl">
+                                <i class="ri-footprint-line"></i>
+                            </div>
+                            <h3 class="font-semibold text-base">DIABETIC FOOT</h3>
+                        </div>
+
+                        <p
+                            class="opacity-0 group-hover:opacity-100 text-gray-700 text-xs mt-2 transition-opacity duration-300">
+                            ANGIOPLASTY AND STENTING
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
 
         <div class="w-screen h-screen  mx-auto px-0 relative z-10">
             <div class="grid grid-cols-1 md:grid-cols-1 gap-12 items-center">
@@ -245,6 +443,7 @@
             </div>
         </div>
     </section>
+
 
     <section id="about" class="pt-16 md:py-10 bg-white">
         <div class="max-w-7xl mx-auto px-2 sm:px-3 lg:px-3">
@@ -277,106 +476,131 @@
                     </div>
 
                     <!-- Right Column: Bio and Qualifications (66% Width) -->
-                 <div class="lg:w-2/3 mx-auto bg-white p-6 rounded-2xl shadow-lg">
-      <div class="flex flex-col lg:flex-row gap-6">
-        <div class="flex-1 text-justify">
-          <h3 class="text-2xl font-semibold mb-4 italic">Dr. Amol Srivastava</h3>
+                    <div class="lg:w-2/3 mx-auto bg-white p-6 rounded-2xl shadow-lg">
+                        <div class="flex flex-col lg:flex-row gap-6">
+                            <div class="flex-1 text-justify">
+                                <h3 class="text-2xl font-semibold mb-4 italic">Dr. Amol Srivastava</h3>
 
-          <p class="text-black/90 mb-4 leading-relaxed">
-            Dr. Amol Srivastava is a leading Interventional Radiologist dedicated to treating
-            complex medical conditions through the smallest possible incisions. By combining diagnostic
-            precision with advanced endovascular techniques, he offers patients a safer alternative to
-            traditional open surgery resulting in less pain, reduced risk, and faster recovery times.
-          </p>
+                                <p class="text-black/90 mb-4 leading-relaxed">
+                                    Dr. Amol Srivastava is a leading Interventional Radiologist dedicated to treating
+                                    complex medical conditions through the smallest possible incisions. By combining
+                                    diagnostic
+                                    precision with advanced endovascular techniques, he offers patients a safer
+                                    alternative to
+                                    traditional open surgery resulting in less pain, reduced risk, and faster recovery
+                                    times.
+                                </p>
 
-          <p class="text-black/90 mb-4 leading-relaxed">
-            While Dr. Srivastava is frequently called upon to manage critical emergencies such as
-            bleeding and acute vascular obstructions he maintains a special interest in outpatient
-            "day-care" therapies that allow patients to return home the same day.
-          </p>
+                                <p class="text-black/90 mb-4 leading-relaxed">
+                                    While Dr. Srivastava is frequently called upon to manage critical emergencies such
+                                    as
+                                    bleeding and acute vascular obstructions he maintains a special interest in
+                                    outpatient
+                                    "day-care" therapies that allow patients to return home the same day.
+                                </p>
 
-          <p class="text-black/90 leading-relaxed">
-            His commitment to innovation and patient-focused treatment continues to make a meaningful
-            impact in the field of interventional radiology.
-          </p>
-        </div>
-      </div>
+                                <p class="text-black/90 leading-relaxed">
+                                    His commitment to innovation and patient-focused treatment continues to make a
+                                    meaningful
+                                    impact in the field of interventional radiology.
+                                </p>
+                            </div>
+                        </div>
 
-<h3 class="text-2xl font-semibold mt-6 
+                        <h3 class="text-2xl font-semibold mt-6 
            bg-gradient-to-r from-blue-400 via-blue-600 to-blue-400
            bg-clip-text text-transparent
            drop-shadow-[0_0_10px_rgba(59,130,246,0.6)]
            animate-pulse">
-    Specialized Focus Areas
-</h3>
-      <!-- Colorful Focus Area Boxes -->
-      <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <!-- Card 1 -->
-        <div class="flex gap-4 items-start bg-gradient-to-br from-indigo-50 to-white p-4 rounded-xl shadow-sm border border-indigo-100">
-          <div class="icon-bg bg-indigo-100 text-indigo-700">
-            <!-- Vein / Laser SVG -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 1.343-3 3v7h6v-7c0-1.657-1.343-3-3-3z" />
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7l6-3" />
-            </svg>
-          </div>
-          <div>
-            <h4 class="font-semibold">Venous Interventions</h4>
-            <p class="text-sm text-gray-700/90">Advanced management of varicose veins using painless Glue therapy and Laser Ablation.</p>
-          </div>
-        </div>
+                            Specialized Focus Areas
+                        </h3>
+                        <!-- Colorful Focus Area Boxes -->
+                        <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <!-- Card 1 -->
+                            <div
+                                class="flex gap-4 items-start bg-gradient-to-br from-indigo-50 to-white p-4 rounded-xl shadow-sm border border-indigo-100">
+                                <div class="icon-bg bg-indigo-100 text-indigo-700">
+                                    <!-- Vein / Laser SVG -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 8c-1.657 0-3 1.343-3 3v7h6v-7c0-1.657-1.343-3-3-3z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 7l6-3" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Venous Interventions</h4>
+                                    <p class="text-sm text-gray-700/90">Advanced management of varicose veins using
+                                        painless Glue therapy and Laser Ablation.</p>
+                                </div>
+                            </div>
 
-        <!-- Card 2 -->
-        <div class="flex gap-4 items-start bg-gradient-to-br from-pink-50 to-white p-4 rounded-xl shadow-sm border border-pink-100">
-          <div class="icon-bg bg-pink-100 text-pink-700">
-            <!-- Gender / Health SVG -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 12a4 4 0 100-8 4 4 0 000 8zM6 20a6 6 0 0112 0H6z" />
-            </svg>
-          </div>
-          <div>
-            <h4 class="font-semibold">Women’s & Men’s Health</h4>
-            <p class="text-sm text-gray-700/90">Non-surgical Fibroid Embolization and Varicocele Embolization — effective, minimally invasive care.</p>
-          </div>
-        </div>
+                            <!-- Card 2 -->
+                            <div
+                                class="flex gap-4 items-start bg-gradient-to-br from-pink-50 to-white p-4 rounded-xl shadow-sm border border-pink-100">
+                                <div class="icon-bg bg-pink-100 text-pink-700">
+                                    <!-- Gender / Health SVG -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24"
+                                        fill="currentColor">
+                                        <path d="M12 12a4 4 0 100-8 4 4 0 000 8zM6 20a6 6 0 0112 0H6z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Women’s & Men’s Health</h4>
+                                    <p class="text-sm text-gray-700/90">Non-surgical Fibroid Embolization and Varicocele
+                                        Embolization — effective, minimally invasive care.</p>
+                                </div>
+                            </div>
 
-        <!-- Card 3 -->
-        <div class="flex gap-4 items-start bg-gradient-to-br from-emerald-50 to-white p-4 rounded-xl shadow-sm border border-emerald-100">
-          <div class="icon-bg bg-emerald-100 text-emerald-700">
-            <!-- Thyroid / gland SVG -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v6m0 8v6M4 8h16" />
-            </svg>
-          </div>
-          <div>
-            <h4 class="font-semibold">Thyroid Care</h4>
-            <p class="text-sm text-gray-700/90">Non-surgical interventions for thyroid goitres and nodules — precise, outpatient-friendly procedures.</p>
-          </div>
-        </div>
+                            <!-- Card 3 -->
+                            <div
+                                class="flex gap-4 items-start bg-gradient-to-br from-emerald-50 to-white p-4 rounded-xl shadow-sm border border-emerald-100">
+                                <div class="icon-bg bg-emerald-100 text-emerald-700">
+                                    <!-- Thyroid / gland SVG -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 2v6m0 8v6M4 8h16" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Thyroid Care</h4>
+                                    <p class="text-sm text-gray-700/90">Non-surgical interventions for thyroid goitres
+                                        and nodules — precise, outpatient-friendly procedures.</p>
+                                </div>
+                            </div>
 
-        <!-- Card 4 -->
-        <div class="flex gap-4 items-start bg-gradient-to-br from-yellow-50 to-white p-4 rounded-xl shadow-sm border border-yellow-100">
-          <div class="icon-bg bg-yellow-100 text-yellow-700">
-            <!-- Complex care / liver SVG -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c2.761 0 5-2.239 5-5S14.761 1 12 1 7 3.239 7 6s2.239 5 5 5z" />
-            </svg>
-          </div>
-          <div>
-            <h4 class="font-semibold">Complex Care</h4>
-            <p class="text-sm text-gray-700/90">Hepatobiliary interventions, Portal Hypertension management, and Onco-interventions with targeted endovascular techniques.</p>
-          </div>
-        </div>
+                            <!-- Card 4 -->
+                            <div
+                                class="flex gap-4 items-start bg-gradient-to-br from-yellow-50 to-white p-4 rounded-xl shadow-sm border border-yellow-100">
+                                <div class="icon-bg bg-yellow-100 text-yellow-700">
+                                    <!-- Complex care / liver SVG -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 11c2.761 0 5-2.239 5-5S14.761 1 12 1 7 3.239 7 6s2.239 5 5 5z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Complex Care</h4>
+                                    <p class="text-sm text-gray-700/90">Hepatobiliary interventions, Portal Hypertension
+                                        management, and Onco-interventions with targeted endovascular techniques.</p>
+                                </div>
+                            </div>
 
-      </div>
+                        </div>
 
-      <!-- Short highlight bar -->
-      <div class="mt-6 p-4 rounded-lg bg-gradient-to-r from-sky-50 to-indigo-50 border border-sky-100">
-        <p class="font-medium text-gray-800">Dr. Srivastava represents the modern era of medicine: precise, effective, and focused on reducing patient recovery time.</p>
-      </div>
+                        <!-- Short highlight bar -->
+                        <div
+                            class="mt-6 p-4 rounded-lg bg-gradient-to-r from-sky-50 to-indigo-50 border border-sky-100">
+                            <p class="font-medium text-gray-800">Dr. Srivastava represents the modern era of medicine:
+                                precise, effective, and focused on reducing patient recovery time.</p>
+                        </div>
 
-    </div>
+                    </div>
 
 
                 </div>
@@ -980,104 +1204,6 @@
 
 
 
-    <!-- Day-care Procedures — 7 Large Icon Cards -->
-<section class="max-w-6xl mx-auto px-4 py-8">
-  <h2 class="text-3xl font-bold lg:text-4xl mb-6 text-center ">Day-care Procedures</h2>
-
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <!-- Card 1 -->
-    <article class="flex gap-4 items-start bg-white p-6 rounded-2xl shadow-sm border">
-      <div class="flex-shrink-0 w-20 h-20 rounded-full bg-indigo-50 flex items-center justify-center text-indigo-600 text-3xl">
-        <!-- Icon (replace SVG as needed) -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 1.343-3 3v7h6v-7c0-1.657-1.343-3-3-3z"/>
-        </svg>
-      </div>
-      <div>
-        <h3 class="font-semibold text-lg">VARICOSE VEIN</h3>
-        <p class="text-sm text-gray-700 mt-1">LASER ABLATION AND VENASEAL GLUE ABLATION</p>
-      </div>
-    </article>
-
-    <!-- Card 2 -->
-    <article class="flex gap-4 items-start bg-white p-6 rounded-2xl shadow-sm border">
-      <div class="flex-shrink-0 w-20 h-20 rounded-full bg-pink-50 flex items-center justify-center text-pink-600 text-3xl">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 12a4 4 0 100-8 4 4 0 000 8zM6 20a6 6 0 0112 0H6z"/>
-        </svg>
-      </div>
-      <div>
-        <h3 class="font-semibold text-lg">VARICOCELE</h3>
-        <p class="text-sm text-gray-700 mt-1">VARICOCELE EMBOLISATION</p>
-      </div>
-    </article>
-
-    <!-- Card 3 -->
-    <article class="flex gap-4 items-start bg-white p-6 rounded-2xl shadow-sm border">
-      <div class="flex-shrink-0 w-20 h-20 rounded-full bg-emerald-50 flex items-center justify-center text-emerald-600 text-3xl">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 7h16M4 12h16M4 17h16"/>
-        </svg>
-      </div>
-      <div>
-        <h3 class="font-semibold text-lg">UTERINE FIBROID</h3>
-        <p class="text-sm text-gray-700 mt-1">UTERINE ARTERY EMBOLISATION</p>
-      </div>
-    </article>
-
-    <!-- Card 4 -->
-    <article class="flex gap-4 items-start bg-white p-6 rounded-2xl shadow-sm border">
-      <div class="flex-shrink-0 w-20 h-20 rounded-full bg-yellow-50 flex items-center justify-center text-yellow-700 text-3xl">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 17l6-10"/>
-        </svg>
-      </div>
-      <div>
-        <h3 class="font-semibold text-lg">KNEE PAIN</h3>
-        <p class="text-sm text-gray-700 mt-1">GENICULAR ARTERY EMBOLISATION</p>
-      </div>
-    </article>
-
-    <!-- Card 5 -->
-    <article class="flex gap-4 items-start bg-white p-6 rounded-2xl shadow-sm border">
-      <div class="flex-shrink-0 w-20 h-20 rounded-full bg-sky-50 flex items-center justify-center text-sky-600 text-3xl">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2v6m0 8v6M4 8h16"/>
-        </svg>
-      </div>
-      <div>
-        <h3 class="font-semibold text-lg">ENLARGED PROSTATE</h3>
-        <p class="text-sm text-gray-700 mt-1">PROSTATE ARTERY EMBOLISATION</p>
-      </div>
-    </article>
-
-    <!-- Card 6 -->
-    <article class="flex gap-4 items-start bg-white p-6 rounded-2xl shadow-sm border">
-      <div class="flex-shrink-0 w-20 h-20 rounded-full bg-rose-50 flex items-center justify-center text-rose-600 text-3xl">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 11c2.761 0 5-2.239 5-5S14.761 1 12 1 7 3.239 7 6s2.239 5 5 5z"/>
-        </svg>
-      </div>
-      <div>
-        <h3 class="font-semibold text-lg">THYROID NODULE AND GOITRE</h3>
-        <p class="text-sm text-gray-700 mt-1">THYROID ABLATION AND THYROID ARTERY EMBOLISATION</p>
-      </div>
-    </article>
-
-    <!-- Card 7 -->
-    <article class="flex gap-4 items-start bg-white p-6 rounded-2xl shadow-sm border">
-      <div class="flex-shrink-0 w-20 h-20 rounded-full bg-violet-50 flex items-center justify-center text-violet-600 text-3xl">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 10h4l3 7 4-14 3 7h4"/>
-        </svg>
-      </div>
-      <div>
-        <h3 class="font-semibold text-lg">DIABETIC FOOT</h3>
-        <p class="text-sm text-gray-700 mt-1">ANGIOPLASTY AND STENTING</p>
-      </div>
-    </article>
-  </div>
-</section>
 
 
 
@@ -1140,32 +1266,44 @@
             <p class="text-gray-600 text-center mb-12">Schedule your visit with our expert physicians</p>
 
             <form id="appointment" class="space-y-6 bg-white p-8 rounded-xl shadow-lg">
+
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <input type="text" placeholder="Full Name"
                         class="px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500">
+
                     <input type="email" placeholder="Email Address"
                         class="px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500">
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <input type="tel" placeholder="Phone Number"
-                        class="px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500">
-                    <select
-                        class="px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500">
-                        <option>Select Department</option>
-                        <option>Cardiology</option>
-                        <option>Gastroenterology</option>
-                        <option>Pulmonology</option>
-                        <option>Orthopedics</option>
-                    </select>
-                </div>
+
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <input type="date"
                         class="px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500">
+
                     <input type="time"
                         class="px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500">
                 </div>
+
+                <!-- ⭐ PHOTO UPLOAD FIELD ⭐ -->
+                <div>
+                    <label class="block text-gray-700 font-medium mb-2">Upload Your Photo (Optional)</label>
+
+                    <div class="flex items-center gap-4">
+                        <label
+                            class="w-full flex flex-col items-center px-4 py-6 bg-gray-50 border border-gray-300 rounded-lg tracking-wide cursor-pointer hover:bg-gray-100 transition">
+                            <i class="ri-image-add-line text-3xl text-cyan-500 mb-2"></i>
+                            <span class="text-gray-600">Choose Photo</span>
+                            <input type="file" id="photoInput" accept="image/*" class="hidden">
+                        </label>
+
+                        <!-- Preview Box -->
+                        <img id="photoPreview" class="w-20 h-20 object-cover rounded-lg hidden border shadow-sm" />
+                    </div>
+                </div>
+                <!-- END -->
+
                 <textarea placeholder="Additional Notes" rows="4"
                     class="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500"></textarea>
+
                 <button type="submit"
                     class="w-full bg-gradient-to-r from-cyan-500 to-cyan-400 text-white py-3 rounded-lg font-bold hover:shadow-lg transition">
                     Book Now
@@ -1187,6 +1325,8 @@
             <!-- Testimonials Swiper -->
             <div class="swiper testimonialsSwiper">
                 <div class="swiper-wrapper">
+
+                    <!-- Aashita Gupta -->
                     <div class="swiper-slide">
                         <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl shadow-lg">
                             <div class="flex items-center gap-2 mb-4">
@@ -1196,16 +1336,19 @@
                                 <i class="fas fa-star text-yellow-400"></i>
                                 <i class="fas fa-star text-yellow-400"></i>
                             </div>
-                            <p class="text-gray-700 text-base mb-6">"The treatment here was excellent. Professional
-                                staff, cutting-edge facilities, and great results! I recovered faster than expected and
-                                the doctors explained everything clearly."</p>
+                            <p class="text-gray-700 text-base mb-6">
+                                "We consulted Dr. Amol for my father’s liver abscess surgery. He patiently listened to
+                                our concerns, guided us throughout the process, and ensured my 68-year-old father
+                                remained calm during the surgery. His compassionate care and constant updates gave us
+                                immense confidence. We are deeply grateful to him."
+                            </p>
                             <div class="border-t pt-4">
-                                <p class="font-bold text-gray-800">John Anderson</p>
-                                <p class="text-sm text-blue-600">Heart Patient</p>
+                                <p class="font-bold text-gray-800">Aashita Gupta</p>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Abhishek Yadav -->
                     <div class="swiper-slide">
                         <div class="bg-gradient-to-br from-pink-50 to-pink-100 p-8 rounded-xl shadow-lg">
                             <div class="flex items-center gap-2 mb-4">
@@ -1215,16 +1358,18 @@
                                 <i class="fas fa-star text-yellow-400"></i>
                                 <i class="fas fa-star text-yellow-400"></i>
                             </div>
-                            <p class="text-gray-700 text-base mb-6">"Amazing care and support throughout my treatment.
-                                The team was compassionate and very professional. I highly recommend Dr. Amol to anyone
-                                seeking quality healthcare!"</p>
+                            <p class="text-gray-700 text-base mb-6">
+                                "I'm extremely grateful to Dr. Amol for his outstanding care in interventional
+                                radiology. His calm approach, expertise, and clear communication made everything easy.
+                                The procedure was smooth, painless, and well executed."
+                            </p>
                             <div class="border-t pt-4">
-                                <p class="font-bold text-gray-800">Sarah Mitchell</p>
-                                <p class="text-sm text-pink-600">Orthopedic Patient</p>
+                                <p class="font-bold text-gray-800">Abhishek Yadav</p>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Dr. Ashish Soni -->
                     <div class="swiper-slide">
                         <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-xl shadow-lg">
                             <div class="flex items-center gap-2 mb-4">
@@ -1234,16 +1379,17 @@
                                 <i class="fas fa-star text-yellow-400"></i>
                                 <i class="fas fa-star text-yellow-400"></i>
                             </div>
-                            <p class="text-gray-700 text-base mb-6">"Dr. Chen is wonderful! He explained everything
-                                clearly and made me feel comfortable throughout the process. The respiratory care I
-                                received was exceptional and very effective."</p>
+                            <p class="text-gray-700 text-base mb-6">
+                                "Sir is very calm and has a very good nature. He explains illnesses and treatments very
+                                well and treats every patient with patience and kindness. Truly the best doctor ever."
+                            </p>
                             <div class="border-t pt-4">
-                                <p class="font-bold text-gray-800">David Thompson</p>
-                                <p class="text-sm text-purple-600">Respiratory Patient</p>
+                                <p class="font-bold text-gray-800">Dr. Ashish Soni</p>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Shivani Srivastava -->
                     <div class="swiper-slide">
                         <div class="bg-gradient-to-br from-cyan-50 to-cyan-100 p-8 rounded-xl shadow-lg">
                             <div class="flex items-center gap-2 mb-4">
@@ -1253,16 +1399,18 @@
                                 <i class="fas fa-star text-yellow-400"></i>
                                 <i class="fas fa-star text-yellow-400"></i>
                             </div>
-                            <p class="text-gray-700 text-base mb-6">"Best healthcare experience I've ever had. The staff
-                                was attentive, the facilities are top-notch, and the doctors are highly skilled. I would
-                                definitely come back!"</p>
+                            <p class="text-gray-700 text-base mb-6">
+                                "I deeply thank Dr. Amol for saving my father’s life during his critical TIPSS
+                                procedure. His clarity, patience, and heartfelt guidance helped us through the toughest
+                                moments. His professionalism and kindness truly stand out."
+                            </p>
                             <div class="border-t pt-4">
-                                <p class="font-bold text-gray-800">Maria Rodriguez</p>
-                                <p class="text-sm text-cyan-600">General Patient</p>
+                                <p class="font-bold text-gray-800">Shivani Srivastava</p>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Faraz Khan -->
                     <div class="swiper-slide">
                         <div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-xl shadow-lg">
                             <div class="flex items-center gap-2 mb-4">
@@ -1272,18 +1420,62 @@
                                 <i class="fas fa-star text-yellow-400"></i>
                                 <i class="fas fa-star text-yellow-400"></i>
                             </div>
-                            <p class="text-gray-700 text-base mb-6">"I was very nervous about my surgery, but the entire
-                                team put me at ease. The post-operative care was outstanding and I'm thrilled with my
-                                recovery!"</p>
+                            <p class="text-gray-700 text-base mb-6">
+                                "Dr. Amol is highly skilled and very polite. He clearly explains every detail before the
+                                procedure and keeps the family updated until discharge. He answers every query patiently
+                                and professionally."
+                            </p>
                             <div class="border-t pt-4">
-                                <p class="font-bold text-gray-800">Robert Wilson</p>
-                                <p class="text-sm text-green-600">Surgery Patient</p>
+                                <p class="font-bold text-gray-800">Faraz Khan</p>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Anshuman Srivastava -->
+                    <div class="swiper-slide">
+                        <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 p-8 rounded-xl shadow-lg">
+                            <div class="flex items-center gap-2 mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <p class="text-gray-700 text-base mb-6">
+                                "Very nice doctor—gentle, intelligent, hardworking and always smiling. I respect him and
+                                his staff a lot."
+                            </p>
+                            <div class="border-t pt-4">
+                                <p class="font-bold text-gray-800">Anshuman Srivastava</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sanjay Pathak -->
+                    <div class="swiper-slide">
+                        <div class="bg-gradient-to-br from-teal-50 to-teal-100 p-8 rounded-xl shadow-lg">
+                            <div class="flex items-center gap-2 mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <p class="text-gray-700 text-base mb-6">
+                                "I wish to undergo more procedures under him in future. I even told management that Dr.
+                                Amol is an asset to the institution and must be retained."
+                            </p>
+                            <div class="border-t pt-4">
+                                <p class="font-bold text-gray-800">Sanjay Pathak</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+
                 <div class="swiper-pagination mt-8"></div>
             </div>
+
         </div>
     </section>
 
@@ -1350,50 +1542,88 @@
     </section>
 
 
+    <section id="publication-section" class="py-20 bg-gradient-to-b from-indigo-50 via-white to-indigo-50 relative overflow-hidden">
+
+    <!-- Animated BG Blobs -->
+    <div class="absolute inset-0 -z-10">
+        <div class="w-72 h-72 bg-indigo-300/30 rounded-full blur-3xl absolute top-20 left-10 animate-pulse"></div>
+        <div class="w-72 h-72 bg-blue-300/30 rounded-full blur-3xl absolute bottom-20 right-10 animate-ping"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Heading -->
+        <header class="flex items-center mb-16 gap-4" data-aos="fade-up">
+            <span class="text-5xl drop-shadow-lg text-indigo-600">⚔️</span>
+            <h2 class="text-4xl sm:text-5xl font-extrabold bg-gradient-to-r from-indigo-700 to-blue-600 bg-clip-text text-transparent">
+                My Premium Publications
+            </h2>
+        </header>
+
+        <!-- Mobile Horizontal Scroll + Desktop Grid -->
+        <div id="publications-container"
+            class="
+                flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4
+                sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-10 sm:overflow-visible
+            "
+            style="scrollbar-width: none; -ms-overflow-style: none;"
+            data-aos="fade-up"
+            data-aos-delay="150">
+        </div>
+
+    </div>
+</section>
+
     <!-- Contact Section -->
-    <!-- Updated contact information - Address, email, and phone ready for user updates -->
-    <section id="contact" class="py-10 md:py-24 bg-white">
+    <section id="map-section" class="py-16 md:py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12 text-center">Contact Us</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <!-- Contact Form -->
-                <div>
-                    <form id="contactForm" class="space-y-4">
-                        <div>
-                            <label class="block text-gray-700 font-medium mb-2">Name</label>
-                            <input id="name" type="text"
-                                class="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500">
-                        </div>
-                        <div>
-                            <label class="block text-gray-700 font-medium mb-2">Email</label>
-                            <input id="email" type="email"
-                                class="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500">
-                        </div>
-                        <div>
-                            <label class="block text-gray-700 font-medium mb-2">Subject</label>
-                            <input id="subject" type="text"
-                                class="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500">
-                        </div>
-                        <div>
-                            <label class="block text-gray-700 font-medium mb-2">Message</label>
-                            <textarea id="message" rows="5"
-                                class="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500"></textarea>
+                <!-- Map Container -->
+                <div class="lg:col-span-2">
+                    <div class="relative rounded-2xl overflow-hidden shadow-xl h-[400px] md:h-[400px]">
+
+                        <div class="relative w-full h-full overflow-hidden rounded-2xl shadow-lg">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.316207402825!2d80.89902051026479!3d26.798058464912597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfea86ebf9adb%3A0x6d57f1b998be6a85!2sApollo%20Medics%20Super%20Speciality%20Hospitals!5e0!3m2!1sen!2sin!4v1764657162633!5m2!1sen!2sin"
+                                width="100%" height="100%" style="border:0;" loading="lazy">
+                            </iframe>
+
+                            <div class="absolute inset-0 bg-transparent"></div>
                         </div>
 
-                        <button type="submit"
-                            class="w-full bg-gradient-to-r from-cyan-500 to-cyan-400 text-white py-3 rounded-lg font-bold hover:shadow-lg transition">
-                            Send Message
-                        </button>
-                    </form>
+                        <!-- Top Bar -->
+                        <div class="absolute top-0 left-0 right-0 bg-black/80 text-white 
+                                flex justify-between items-center px-4 py-2">
+                            <div class="flex items-center gap-2">
+                                <img src="images/logo1.jpg" alt="Logo" class="w-8 h-8 rounded-full">
+                                <div>
+                                    <h3 class="text-sm font-bold leading-tight">Dr. Amol</h3>
+                                    <p class="text-xs opacity-80">Dr. Amol</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-10">
+                                <a href="https://www.google.com/maps" target="_blank"
+                                    class="hover:text-cyan-400 transition">
+                                    <i class="fas fa-share-alt"></i>
+                                </a>
+
+                                <button onclick="toggleFullscreen(this)" class="hover:text-cyan-400 transition">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
 
-                <!-- Contact Info -->
+                <!-- Contact Info Section -->
                 <div class="space-y-8">
-                    <!-- Updated with correct contact information from provided data -->
+
                     <div class="flex gap-4">
-                        <div
-                            class="flex-shrink-0 w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center text-pink-600 text-xl">
+                        <div class="flex-shrink-0 w-12 h-12 bg-pink-100 rounded-lg 
+                                flex items-center justify-center text-pink-600 text-xl">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div>
@@ -1404,8 +1634,8 @@
                     </div>
 
                     <div class="flex gap-4">
-                        <div
-                            class="flex-shrink-0 w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center text-cyan-600 text-xl">
+                        <div class="flex-shrink-0 w-12 h-12 bg-cyan-100 rounded-lg 
+                                flex items-center justify-center text-cyan-600 text-xl">
                             <i class="fas fa-phone"></i>
                         </div>
                         <div>
@@ -1415,8 +1645,8 @@
                     </div>
 
                     <div class="flex gap-4">
-                        <div
-                            class="flex-shrink-0 w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center text-purple-600 text-xl">
+                        <div class="flex-shrink-0 w-12 h-12 bg-purple-100 rounded-lg 
+                                flex items-center justify-center text-purple-600 text-xl">
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div>
@@ -1426,8 +1656,8 @@
                     </div>
 
                     <div class="flex gap-4">
-                        <div
-                            class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 text-xl">
+                        <div class="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg 
+                                flex items-center justify-center text-blue-600 text-xl">
                             <i class="fas fa-clock"></i>
                         </div>
                         <div>
@@ -1435,10 +1665,13 @@
                             <p class="text-gray-600">Available by appointment<br>Contact for timings</p>
                         </div>
                     </div>
+
                 </div>
+
             </div>
         </div>
     </section>
+
 
     <!-- Newsletter Section -->
     <section class="py-16 md:py-10 bg-gradient-to-r from-cyan-500 to-cyan-400">
@@ -1459,84 +1692,6 @@
         </div>
     </section>
 
-
-    <!-- Map & Newsletter Section -->
-    <section id="map-section" class="py-16 md:py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
-
-                <!-- Map Container -->
-                <div class="lg:col-span-2">
-                    <div
-                        class="relative rounded-2xl overflow-hidden shadow-xl h-[500px] md:h-[600px] flex items-center justify-center">
-                        <!-- Embed map with full-screen + share -->
-                        <div class="relative w-full h-[500px] overflow-hidden rounded-2xl shadow-lg">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.316207402825!2d80.89902051026479!3d26.798058464912597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfea86ebf9adb%3A0x6d57f1b998be6a85!2sApollo%20Medics%20Super%20Speciality%20Hospitals!5e0!3m2!1sen!2sin!4v1764657162633!5m2!1sen!2sin"
-                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                            <!-- Overlay to disable map controls & hide watermark -->
-                            <div class="absolute inset-0 bg-transparent"></div>
-                        </div>
-
-
-                        <!-- Top bar with share + fullscreen -->
-                        <div
-                            class="absolute top-0 left-0 right-0 bg-black/80 text-white flex justify-between items-center px-4 py-2">
-                            <div class="flex items-center gap-2">
-                                <img src="images/logo1.jpg" alt="Logo" class="w-8 h-8 rounded-full">
-                                <div>
-                                    <h3 class="text-sm font-bold leading-tight">Dr. Amol</h3>
-                                    <p class="text-xs opacity-80">Dr. Amol</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-10">
-                                <a href="https://www.google.com/maps" target="_blank"
-                                    class="hover:text-cyan-400 transition">
-                                    <i class="fas fa-share-alt"></i>
-                                </a>
-                                <button onclick="toggleFullscreen(this)" class="hover:text-cyan-400 transition">
-                                    <i class="fas fa-expand"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Newsletter + Contact -->
-                <div class="space-y-6">
-                    <!-- Newsletter Box -->
-                    <div class="bg-white rounded-2xl shadow-lg p-8">
-                        <h2 class="text-2xl font-bold text-gray-800 mb-6">Newsletter</h2>
-                        <form class="space-y-4">
-                            <div>
-                                <label class="block text-gray-700 font-semibold mb-2">Name <span
-                                        class="text-red-500">*</span></label>
-                                <input type="text" placeholder="Your name"
-                                    class="w-full px-4 py-3 bg-gray-100 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500">
-                            </div>
-                            <div>
-                                <label class="block text-gray-700 font-semibold mb-2">Email Address <span
-                                        class="text-red-500">*</span></label>
-                                <input type="email" placeholder="your.email@example.com"
-                                    class="w-full px-4 py-3 bg-gray-100 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500">
-                            </div>
-                            <div>
-                                <input type="text" placeholder="Message (optional)"
-                                    class="w-full px-4 py-3 bg-gray-100 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500 h-24 resize-none">
-                            </div>
-                            <button type="submit"
-                                class="w-full bg-gradient-to-r from-cyan-500 to-cyan-400 text-white py-3 rounded-lg font-bold hover:shadow-lg transition flex items-center justify-center gap-2">
-                                Subscribe <i class="fas fa-arrow-right"></i>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
     <!-- Footer -->
     <footer class="bg-gray-900 text-gray-300">
         <div class="max-w-7xl mx-auto px-4 py-16">
@@ -1592,7 +1747,7 @@
                             class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition">
                             <i class="fab fa-youtube"></i>
                         </a>
-                        <a href="#"
+                        <a href="https://www.linkedin.com/in/amol-srivastava-aa8aab30b?utm_source=share_via&utm_content=profile&utm_medium=member_iosLinkedIn page"
                             class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
@@ -1666,7 +1821,7 @@
         heroImageElement.style.transition = 'opacity 1s ease-in-out';
         setInterval(updateHeroImage, 3000);
 
-       
+
 
 
 
@@ -1741,30 +1896,57 @@
             });
         });
 
-        document.getElementById("contactForm").addEventListener("submit", function (e) {
-            e.preventDefault(); // Form reload roko
+        // 📌 PHOTO PREVIEW CODE
+        document.getElementById("photoInput").addEventListener("change", function (event) {
+            const file = event.target.files[0];
+            const preview = document.getElementById("photoPreview");
 
-            // Input values
-            let name = document.getElementById("name").value;
-            let email = document.getElementById("email").value;
-            let subject = document.getElementById("subject").value;
-            let message = document.getElementById("message").value;
+            if (file) {
+                preview.src = URL.createObjectURL(file);
+                preview.classList.remove("hidden");
+            }
+        });
+
+
+        // 📌 FORM SUBMIT -> SEND TO WHATSAPP
+        document.getElementById("appointment").addEventListener("submit", function (e) {
+            // e.preventDefault();
+
+            // Values collect karo
+            let name = document.querySelector("input[placeholder='Full Name']").value.trim();
+            let email = document.querySelector("input[placeholder='Email Address']").value.trim();
+            let date = document.querySelector("input[type='date']").value;
+            let time = document.querySelector("input[type='time']").value;
+            let notes = document.querySelector("textarea").value.trim();
+
+            let photo = document.getElementById("photoInput").files[0];
+
+            // Basic validation
+            if (!name || !email || !date || !time) {
+                alert("Please fill all required fields!");
+                return;
+            }
 
             // WhatsApp message text
             let text =
-                `📩 *New Contact Form Submission* %0A%0A` +
+                `📅 *New Appointment Request* %0A%0A` +
                 `👤 *Name:* ${name} %0A` +
                 `📧 *Email:* ${email} %0A` +
-                `📝 *Subject:* ${subject} %0A` +
-                `💬 *Message:* ${message}`;
+                `🗓 *Preferred Date:* ${date} %0A` +
+                `⏰ *Preferred Time:* ${time} %0A` +
+                `📝 *Notes:* ${notes ? notes : "No additional notes."} %0A%0A` +
+                `📸 *Photo Attached:* ${photo ? "YES" : "NO"}`;
 
+            // Your WhatsApp number
+            let phone = "9520770330"; // yaha apna number daalna
 
-            // WhatsApp URL (Your number)
-            let whatsappURL = `https://wa.me/952077033?text=${text}`;
+            // WhatsApp URL
+            let whatsappURL = `https://wa.me/${phone}?text=${text}`;
 
             // Open WhatsApp
             window.open(whatsappURL, "_blank");
         });
+
 
         const servicesContainer = document.getElementById("servicesContainer");
 
@@ -1796,8 +1978,138 @@
             servicesContainer.scrollBy({ left: cardWidth, behavior: "smooth" });
         });
 
+        const publications = [
+            {
+                id: 1,
+                title: "Transarterial Chemoembolization: A Consistent and Continuously Evolving Therapy for Hepatocellular Carcinoma",
+                author: "Mukund A, Kumar N, Srivastava A, Baby A",
+                summary: "A comprehensive review discussing the evolution, clinical effectiveness, and future prospects of TACE in managing hepatocellular carcinoma.",
+                icon: "beaker",
+                link: "https://pubmed.ncbi.nlm.nih.gov/40226387/"
+            },
+            {
+                id: 2,
+                title: "Addisonian Pigmentation - The Great Mimicker",
+                author: "Verma D, Sarkar R, Mendiratta V, Srivastava A",
+                summary: "A detailed review highlighting the clinical presentation, differential diagnosis, and challenges in identifying Addisonian pigmentation.",
+                icon: "sparkles",
+                link: "https://pubmed.ncbi.nlm.nih.gov/39649977/"
+            },
+            {
+                id: 3,
+                title: "Lipoid Proteinosis: A Rare Case Report and Literature Review",
+                author: "Verma D, Mendiratta V, Yadav V, Birla A, Srivastava A",
+                summary: "A rare dermatological condition described through a clinical case report along with an overview of previously documented findings.",
+                icon: "identification",
+                link: "https://pubmed.ncbi.nlm.nih.gov/39359293/"
+            },
+            {
+                id: 4,
+                title: "Partial Reversal of Shunt Myelopathy and Hepatic Parkinsonism via BRTO",
+                author: "Mukund A, Premkumar M, Srivastava A, Baby A, Patidar Y, Sarin S",
+                summary: "A case highlighting successful clinical improvement using Balloon-Occluded Retrograde Transvenous Obliteration in complex hepatic conditions.",
+                icon: "arrow-path",
+                link: "https://pubmed.ncbi.nlm.nih.gov/38649445/"
+            },
+            {
+                id: 5,
+                title: "Lung Ultrasound: A Supplementary Tool in Diagnosing Pediatric Pulmonary Tuberculosis",
+                author: "Rathi V, Rawat R, Kumar S, Srivastava A, Tandon A",
+                summary: "An in-depth study demonstrating the role of lung ultrasound as a supportive diagnostic tool for pulmonary TB in children.",
+                icon: "viewfinder-circle",
+                link: "https://pubmed.ncbi.nlm.nih.gov/39887432/"
+            },
+            {
+                id: 6,
+                title: "Correlation Between Sarcopenia and Future Liver Remnant Hypertrophy After Portal Vein Embolization",
+                author: "Baby A, Patidar Y, Mukund A, Srivastava A, Kumar N, Sasturkar SV, Tevethia HV, Pamecha V",
+                summary: "Research exploring how sarcopenia influences liver regeneration outcomes in patients undergoing portal vein embolization.",
+                // icon: "chart-bar",
+                link: "https://pubmed.ncbi.nlm.nih.gov/39799514/"
+            },
+            {
+                id: 7,
+                title: "Bleeding From Unintentional Portal Vein Stenting During ERCP Managed With Stent Graft Placement",
+                author: "Dr. Amol Srivastava",
+                summary: "A clinically significant case report discussing the management of accidental portal vein stenting during ERCP using stent graft placement.",
+                icon: "shield-check",
+                link: "https://pubmed.ncbi.nlm.nih.gov/39802554/"
+            }
+        ];
 
-     
+        // Function to get SVG Icons (colors adjusted for light theme)
+        function getIconSvg(iconName) {
+            const icons = {
+                "book-open": `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.409 9.333 5 8 5a2 2 0 000 4v8a2 2 0 000 4 2 2 0 004 0 2 2 0 004 0 2 2 0 004 0v-8a2 2 0 000-4 2 2 0 00-4 0 2 2 0 00-4 0z"/></svg>`,
+                "leaf": `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>`,
+                "cpu-chip": `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9h2m-2 6h2m14-6h-2m2 6h-2M15 9h3.75a2.25 2.25 0 002.25-2.25V4.375A2.25 2.25 0 0018.75 2.25h-3.375M12 12h.01M12 7.5a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z"/></svg>`,
+                "music-note": `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>`,
+                "chart-bar": `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 6-6m-9 5l4 4 4-4"/></svg>`,
+                "chat-bubble-left-right": `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-cyan-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.692C5.358 15.69 6 11.83 6 12z"/></svg>`,
+                "bolt": `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>`,
+            };
+            return icons[iconName] || `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2h2m4 4h.01"/></svg>`;
+        }
+
+        const container = document.getElementById('publications-container');
+
+        function renderPublications() {
+            publications.forEach(pub => {
+                // Main Card Element
+                const card = document.createElement('div');
+                card.className = 'light-card rounded-xl p-6 shadow-md hover:shadow-lg';
+
+                // Icon and Title Header
+                const header = document.createElement('div');
+                header.className = 'flex items-start mb-4';
+
+                const iconDiv = document.createElement('div');
+                iconDiv.className = 'p-2 rounded-full bg-gray-100 mr-4 shadow-inner';
+                iconDiv.innerHTML = getIconSvg(pub.icon);
+
+                const titleGroup = document.createElement('div');
+                titleGroup.className = 'flex flex-col';
+
+                const title = document.createElement('h3'); // Changed to h3 for semantic hierarchy
+                title.className = 'text-xl font-bold text-gray-800 mb-1';
+                title.textContent = pub.title;
+
+                const author = document.createElement('p');
+                author.className = 'text-sm text-gray-500 italic';
+                author.textContent = `By: ${pub.author}`;
+
+                titleGroup.appendChild(title);
+                titleGroup.appendChild(author);
+
+                header.appendChild(iconDiv);
+                header.appendChild(titleGroup);
+
+                // Summary (Truncated)
+                const summary = document.createElement('p');
+                summary.className = 'text-gray-700 text-base mb-4 line-clamp-3';
+                summary.textContent = pub.summary;
+
+                // Read More Link/Button
+                const readMoreLink = document.createElement('a');
+                readMoreLink.className = 'inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-white';
+                readMoreLink.href = pub.link;
+                readMoreLink.textContent = 'Read More →';
+                readMoreLink.target = '_blank';
+
+                // Append elements to the card
+                card.appendChild(header);
+                card.appendChild(summary);
+                card.appendChild(readMoreLink);
+
+                // Append the card to the container
+                container.appendChild(card);
+            });
+        }
+
+        // Run on page load
+        document.addEventListener('DOMContentLoaded', renderPublications);
+
+
     </script>
 </body>
 
