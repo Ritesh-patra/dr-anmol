@@ -173,9 +173,9 @@
             /* Fixed height for consistency */
         }
 
-         #publications-container::-webkit-scrollbar {
-        display: none;
-    }
+        #publications-container::-webkit-scrollbar {
+            display: none;
+        }
     </style>
 </head>
 
@@ -237,10 +237,10 @@
                             </div>
                         </div>
                     </div>
-                    <button
+                    <a href="#app"
                         class="bg-gradient-to-r from-cyan-500 to-cyan-400 text-white px-6 py-2 rounded-full font-medium hover:shadow-lg transition">
                         Book Appointment
-                    </button>
+                    </a>
                 </div>
 
                 <!-- Mobile Menu Button -->
@@ -255,10 +255,10 @@
                 <a href="#services" class="block text-gray-700 hover:text-pink-600 font-medium py-2">Services</a>
                 <a href="#about" class="block text-gray-700 hover:text-pink-600 font-medium py-2">About</a>
                 <a href="#contact" class="block text-gray-700 hover:text-pink-600 font-medium py-2">Contact</a>
-                <button
+                <a href="#app"
                     class="w-full bg-gradient-to-r from-cyan-500 to-cyan-400 text-white px-6 py-2 rounded-lg font-medium">
                     Book Appointment
-                </button>
+            </a>
             </div>
         </div>
     </nav>
@@ -1260,7 +1260,8 @@
 
 
     <!-- Book Appointment Section -->
-    <section class="py-5 md:py-24 bg-gray-50">
+    <section id="app"
+" class="py-5 md:py-24 bg-gray-50">
         <div class="max-w-3xl mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-center">Book An Appointment</h2>
             <p class="text-gray-600 text-center mb-12">Schedule your visit with our expert physicians</p>
@@ -1542,37 +1543,35 @@
     </section>
 
 
-    <section id="publication-section" class="py-20 bg-gradient-to-b from-indigo-50 via-white to-indigo-50 relative overflow-hidden">
+    <section id="publication-section"
+        class="py-20 bg-gradient-to-b from-indigo-50 via-white to-indigo-50 relative overflow-hidden">
 
-    <!-- Animated BG Blobs -->
-    <div class="absolute inset-0 -z-10">
-        <div class="w-72 h-72 bg-indigo-300/30 rounded-full blur-3xl absolute top-20 left-10 animate-pulse"></div>
-        <div class="w-72 h-72 bg-blue-300/30 rounded-full blur-3xl absolute bottom-20 right-10 animate-ping"></div>
-    </div>
-
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-        <!-- Heading -->
-        <header class="flex items-center mb-16 gap-4" data-aos="fade-up">
-            <span class="text-5xl drop-shadow-lg text-indigo-600">⚔️</span>
-            <h2 class="text-4xl sm:text-5xl font-extrabold bg-gradient-to-r from-indigo-700 to-blue-600 bg-clip-text text-transparent">
-                My Premium Publications
-            </h2>
-        </header>
-
-        <!-- Mobile Horizontal Scroll + Desktop Grid -->
-        <div id="publications-container"
-            class="
-                flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4
-                sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-10 sm:overflow-visible
-            "
-            style="scrollbar-width: none; -ms-overflow-style: none;"
-            data-aos="fade-up"
-            data-aos-delay="150">
+        <!-- Animated BG Blobs -->
+        <div class="absolute inset-0 -z-10">
+            <div class="w-72 h-72 bg-indigo-300/30 rounded-full blur-3xl absolute top-20 left-10 animate-pulse"></div>
+            <div class="w-72 h-72 bg-blue-300/30 rounded-full blur-3xl absolute bottom-20 right-10 animate-ping"></div>
         </div>
 
-    </div>
-</section>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Heading -->
+            <header class="flex items-center mb-16 gap-4" data-aos="fade-up">
+                <span class="text-5xl drop-shadow-lg text-indigo-600">⚔️</span>
+                <h2
+                    class="text-4xl sm:text-5xl font-extrabold bg-gradient-to-r from-indigo-700 to-blue-600 bg-clip-text text-transparent">
+                    My Premium Publications
+                </h2>
+            </header>
+
+            <!-- Mobile Horizontal Scroll + Desktop Grid -->
+            <div id="publications-container" class="
+                flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4
+                sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-10 sm:overflow-visible
+            " style="scrollbar-width: none; -ms-overflow-style: none;" data-aos="fade-up" data-aos-delay="150">
+            </div>
+
+        </div>
+    </section>
 
     <!-- Contact Section -->
     <section id="map-section" class="py-16 md:py-24 bg-white">
@@ -1589,7 +1588,7 @@
                                 width="100%" height="100%" style="border:0;" loading="lazy">
                             </iframe>
 
-                            <div class="absolute inset-0 bg-transparent"></div>
+                            <!-- <div class="absolute inset-0 bg-transparent"></div> -->
                         </div>
 
                         <!-- Top Bar -->
@@ -1628,7 +1627,8 @@
                         </div>
                         <div>
                             <h3 class="font-bold text-gray-800 mb-1">Location</h3>
-                            <p class="text-gray-600">A-821, Azea Botonica, Vrindawan Colony<br>Lucknow, Uttar Pradesh
+                            <p class="text-gray-600">Kanpur - Lucknow Rd, Sector B, Bargawan, LDA Colony, Lucknow, Uttar
+                                Pradesh 226012
                             </p>
                         </div>
                     </div>
@@ -1699,10 +1699,10 @@
                 <div>
                     <div class="flex items-center space-x-2 mb-4">
                         <div
-                            class="w-10 h-10 bg-gradient-to-br overflow-hidden from-pink-500 to-purple-600 rounded-lg flex items-center justify-center text-white font-bold">
-                            <img src="images/logo1.jpg" class="w-full h-full object-cover" alt="">
+                            class="w-32 h-14 bg-gradient-to-br overflow-hidden from-pink-500 to-purple-600 rounded-lg flex items-center justify-center text-white font-bold">
+                            <img src="images/new logo .jpg" class="w-full h-full object-cover" alt="">
                         </div>
-                        <span class="text-white font-bold text-lg">Dr. Amol</span>
+
                     </div>
                     <p class="text-gray-400 text-sm">Advanced Care Through Innovation - Your trusted healthcare partner
                     </p>
