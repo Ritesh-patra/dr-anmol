@@ -237,14 +237,27 @@
                             </div>
                         </div>
                     </div>
+                    <button id="showCardsBtn"
+                        class="hidden sm:block bg-indigo-600 text-white px-4 py-2 rounded-full font-medium hover:bg-indigo-700 transition">
+                        What We Do
+                    </button>
                     <a href="#app"
                         class="bg-gradient-to-r from-cyan-500 to-cyan-400 text-white px-6 py-2 rounded-full font-medium hover:shadow-lg transition">
                         Book Appointment
                     </a>
                 </div>
+                <button id="mobilebtn"
+                    class="block sm:hidden bg-indigo-600 text-white px-4 py-2 rounded-full font-medium hover:bg-indigo-700 transition">
+                    What We Do
+                </button>
+
+
 
                 <!-- Mobile Menu Button -->
                 <button id="mobileMenuBtn" class="md:hidden text-gray-700 text-2xl"><i class="fas fa-bars"></i></button>
+
+
+
             </div>
         </div>
 
@@ -256,9 +269,9 @@
                 <a href="#about" class="block text-gray-700 hover:text-pink-600 font-medium py-2">About</a>
                 <a href="#contact" class="block text-gray-700 hover:text-pink-600 font-medium py-2">Contact</a>
                 <a href="#app"
-                    class="w-full bg-gradient-to-r from-cyan-500 to-cyan-400 text-white px-6 py-2 rounded-lg font-medium">
+                    class="w-full bg-gradient-to-r from-cyan-500 to-cyan-400 mt-20 text-center text-white px-6 py-2 rounded-lg font-medium">
                     Book Appointment
-            </a>
+                </a>
             </div>
         </div>
     </nav>
@@ -267,152 +280,148 @@
     <section id="home" class="text-white py-0 relative overflow-hidden">
         <!-- <div class="absolute inset-0 bg-cover bg-center opacity-20"></div> -->
         <!-- Day-care Procedures — 7 Compact Icon Cards -->
-        <section class="absolute top-5 left-1/2 -translate-x-1/2 w-full max-w-7xl px-4 z-30 text-black">
+        <section id="cardSection"
+            class="absolute hidden top-5 left-1/2 -translate-x-1/2 w-full max-w-7xl px-4 text-black" style="z-index:99;">
 
-            <div class="flex gap-4 overflow-x-auto pb-4 no-scrollbar">
+            <div class="flex gap-3 overflow-x-auto pb-4 no-scrollbar">
 
-                <!-- SINGLE CARD TEMPLATE -->
-                <div class="relative group min-w-[230px]">
-                    <div class="bg-white border p-4 rounded-xl shadow transition-all duration-300 cursor-pointer 
-                       group-hover:h-auto h-[80px] overflow-hidden">
+                <!-- CARD TEMPLATE -->
+                <div class="relative group min-w-[200px]">
+                    <div class="bg-white border p-3 rounded-xl shadow transition-all duration-300 cursor-pointer 
+                group-hover:h-auto h-[65px] overflow-hidden">
 
-                        <div class="flex items-center gap-3">
+                        <div class="flex items-center gap-2">
                             <div
-                                class="w-12 h-12 rounded-full bg-indigo-50 text-indigo-600 flex items-center justify-center text-2xl">
+                                class="w-10 h-10 rounded-full bg-indigo-50 text-indigo-600 flex items-center justify-center text-xl">
                                 <i class="ri-heart-pulse-line"></i>
                             </div>
-                            <h3 class="font-semibold text-base">VARICOSE VEIN</h3>
+                            <h3 class="font-semibold text-sm">VARICOSE VEIN</h3>
+                            
                         </div>
 
-                        <!-- DESCRIPTION -->
                         <p
-                            class="opacity-0 group-hover:opacity-100 text-gray-700 text-xs mt-2 transition-opacity duration-300">
+                            class="opacity-0 group-hover:opacity-100 text-gray-700 text-[11px] mt-1 transition-opacity duration-300">
                             LASER ABLATION AND VENASEAL GLUE ABLATION
                         </p>
 
                     </div>
                 </div>
 
-                <!-- CARD -->
-                <div class="relative group min-w-[230px]">
-                    <div class="bg-white border p-4 rounded-xl shadow transition-all duration-300 cursor-pointer 
-                       group-hover:h-auto h-[80px] overflow-hidden">
+                <!-- Repeat Cards -->
+                <div class="relative group min-w-[200px]">
+                    <div class="bg-white border p-3 rounded-xl shadow transition-all duration-300 cursor-pointer 
+                group-hover:h-auto h-[65px] overflow-hidden">
 
-                        <div class="flex items-center gap-3">
+                        <div class="flex items-center gap-2">
                             <div
-                                class="w-12 h-12 rounded-full bg-pink-50 text-pink-600 flex items-center justify-center text-2xl">
+                                class="w-10 h-10 rounded-full bg-pink-50 text-pink-600 flex items-center justify-center text-xl">
                                 <i class="ri-user-heart-line"></i>
                             </div>
-                            <h3 class="font-semibold text-base">VARICOCELE</h3>
+                            <h3 class="font-semibold text-sm">VARICOCELE</h3>
                         </div>
 
                         <p
-                            class="opacity-0 group-hover:opacity-100 text-gray-700 text-xs mt-2 transition-opacity duration-300">
+                            class="opacity-0 group-hover:opacity-100 text-gray-700 text-[11px] mt-1 transition-opacity duration-300">
                             VARICOCELE EMBOLISATION
                         </p>
 
                     </div>
                 </div>
 
-                <!-- CARD -->
-                <div class="relative group min-w-[230px]">
-                    <div class="bg-white border p-4 rounded-xl shadow transition-all duration-300 cursor-pointer 
-                       group-hover:h-auto h-[80px] overflow-hidden">
+                <div class="relative group min-w-[200px]">
+                    <div class="bg-white border p-3 rounded-xl shadow transition-all duration-300 cursor-pointer 
+                group-hover:h-auto h-[65px] overflow-hidden">
 
-                        <div class="flex items-center gap-3">
+                        <div class="flex items-center gap-2">
                             <div
-                                class="w-12 h-12 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center text-2xl">
+                                class="w-10 h-10 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl">
                                 <i class="ri-women-line"></i>
                             </div>
-                            <h3 class="font-semibold text-base">UTERINE FIBROID</h3>
+                            <h3 class="font-semibold text-sm">UTERINE FIBROID</h3>
                         </div>
 
                         <p
-                            class="opacity-0 group-hover:opacity-100 text-gray-700 text-xs mt-2 transition-opacity duration-300">
+                            class="opacity-0 group-hover:opacity-100 text-gray-700 text-[11px] mt-1 transition-opacity duration-300">
                             UTERINE ARTERY EMBOLISATION
                         </p>
 
                     </div>
                 </div>
 
-                <!-- CARD -->
-                <div class="relative group min-w-[230px]">
-                    <div class="bg-white border p-4 rounded-xl shadow transition-all duration-300 cursor-pointer 
-                       group-hover:h-auto h-[80px] overflow-hidden">
+                <div class="relative group min-w-[200px]">
+                    <div class="bg-white border p-3 rounded-xl shadow transition-all duration-300 cursor-pointer 
+                group-hover:h-auto h-[65px] overflow-hidden">
 
-                        <div class="flex items-center gap-3">
+                        <div class="flex items-center gap-2">
                             <div
-                                class="w-12 h-12 rounded-full bg-yellow-50 text-yellow-600 flex items-center justify-center text-2xl">
+                                class="w-10 h-10 rounded-full bg-yellow-50 text-yellow-600 flex items-center justify-center text-xl">
                                 <i class="ri-run-line"></i>
                             </div>
-                            <h3 class="font-semibold text-base">KNEE PAIN</h3>
+                            <h3 class="font-semibold text-sm">KNEE PAIN</h3>
                         </div>
 
                         <p
-                            class="opacity-0 group-hover:opacity-100 text-gray-700 text-xs mt-2 transition-opacity duration-300">
+                            class="opacity-0 group-hover:opacity-100 text-gray-700 text-[11px] mt-1 transition-opacity duration-300">
                             GENICULAR ARTERY EMBOLISATION
                         </p>
 
                     </div>
                 </div>
 
-                <!-- CARD -->
-                <div class="relative group min-w-[230px]">
-                    <div class="bg-white border p-4 rounded-xl shadow transition-all duration-300 cursor-pointer 
-                       group-hover:h-auto h-[80px] overflow-hidden">
+                <div class="relative group min-w-[200px]">
+                    <div class="bg-white border p-3 rounded-xl shadow transition-all duration-300 cursor-pointer 
+                group-hover:h-auto h-[65px] overflow-hidden">
 
-                        <div class="flex items-center gap-3">
+                        <div class="flex items-center gap-2">
                             <div
-                                class="w-12 h-12 rounded-full bg-sky-50 text-sky-600 flex items-center justify-center text-2xl">
+                                class="w-10 h-10 rounded-full bg-sky-50 text-sky-600 flex items-center justify-center text-xl">
                                 <i class="ri-hospital-line"></i>
                             </div>
-                            <h3 class="font-semibold text-base">ENLARGED PROSTATE</h3>
+                            <h3 class="font-semibold text-sm">ENLARGED PROSTATE</h3>
                         </div>
 
                         <p
-                            class="opacity-0 group-hover:opacity-100 text-gray-700 text-xs mt-2 transition-opacity duration-300">
+                            class="opacity-0 group-hover:opacity-100 text-gray-700 text-[11px] mt-1 transition-opacity duration-300">
                             PROSTATE ARTERY EMBOLISATION
                         </p>
 
                     </div>
                 </div>
 
-                <!-- CARD -->
-                <div class="relative group min-w-[230px]">
-                    <div class="bg-white border p-4 rounded-xl shadow transition-all duration-300 cursor-pointer 
-                       group-hover:h-auto h-[80px] overflow-hidden">
+                <div class="relative group min-w-[200px]">
+                    <div class="bg-white border p-3 rounded-xl shadow transition-all duration-300 cursor-pointer 
+                group-hover:h-auto h-[65px] overflow-hidden">
 
-                        <div class="flex items-center gap-3">
+                        <div class="flex items-center gap-2">
                             <div
-                                class="w-12 h-12 rounded-full bg-rose-50 text-rose-600 flex items-center justify-center text-2xl">
+                                class="w-10 h-10 rounded-full bg-rose-50 text-rose-600 flex items-center justify-center text-xl">
                                 <i class="ri-nurse-line"></i>
                             </div>
-                            <h3 class="font-semibold text-base">THYROID NODULE & GOITRE</h3>
+                            <h3 class="font-semibold text-sm">THYROID NODULE & GOITRE</h3>
                         </div>
 
                         <p
-                            class="opacity-0 group-hover:opacity-100 text-gray-700 text-xs mt-2 transition-opacity duration-300">
+                            class="opacity-0 group-hover:opacity-100 text-gray-700 text-[11px] mt-1 transition-opacity duration-300">
                             THYROID ABLATION AND THYROID ARTERY EMBOLISATION
                         </p>
 
                     </div>
                 </div>
 
-                <!-- CARD -->
-                <div class="relative group min-w-[230px]">
-                    <div class="bg-white border p-4 rounded-xl shadow transition-all duration-300 cursor-pointer 
-                       group-hover:h-auto h-[80px] overflow-hidden">
+                <div class="relative group min-w-[200px]">
+                    <div class="bg-white border p-3 rounded-xl shadow transition-all duration-300 cursor-pointer 
+                group-hover:h-auto h-[65px] overflow-hidden">
 
-                        <div class="flex items-center gap-3">
+                        <div class="flex items-center gap-2">
                             <div
-                                class="w-12 h-12 rounded-full bg-violet-50 text-violet-600 flex items-center justify-center text-2xl">
+                                class="w-10 h-10 rounded-full bg-violet-50 text-violet-600 flex items-center justify-center text-xl">
                                 <i class="ri-footprint-line"></i>
                             </div>
-                            <h3 class="font-semibold text-base">DIABETIC FOOT</h3>
+                            <h3 class="font-semibold text-sm">DIABETIC FOOT</h3>
                         </div>
 
                         <p
-                            class="opacity-0 group-hover:opacity-100 text-gray-700 text-xs mt-2 transition-opacity duration-300">
+                            class="opacity-0 group-hover:opacity-100 text-gray-700 text-[11px] mt-1 transition-opacity duration-300">
                             ANGIOPLASTY AND STENTING
                         </p>
 
@@ -421,6 +430,7 @@
 
             </div>
         </section>
+
 
 
 
@@ -494,9 +504,10 @@
                                 <p class="text-black/90 mb-4 leading-relaxed">
                                     While Dr. Srivastava is frequently called upon to manage critical emergencies such
                                     as
-                                    bleeding and acute vascular obstructions he maintains a special interest in
+                                    bleeding and acute vascular obstructions, he maintains a special interest in
                                     outpatient
-                                    "day-care" therapies that allow patients to return home the same day.
+                                    <span class="font-semibold">day-care</span> therapies that allow patients to return
+                                    home the same day.
                                 </p>
 
                                 <p class="text-black/90 leading-relaxed">
@@ -626,8 +637,9 @@
                                 <p class="text-gray-700 text-sm font-semibold text-indigo-600">Institute of Medical
                                     Sciences, BHU</p>
                                 <span
-                                    class="inline-block mt-1 px-3 py-1 text-xs font-semibold bg-yellow-100 text-yellow-800 rounded-full">Honors
-                                    in Pathology & Ophthalmology</span>
+                                    class="inline-block mt-1 px-3 py-1 text-xs font-semibold bg-yellow-100 text-yellow-800 rounded-full">
+                                    Gold Medalist
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -969,33 +981,6 @@
                     </div>
                 </a>
 
-
-                <!-- ==== NEURO ==== -->
-                <a href="neuro-interventions.html"
-                    class="group relative flex-shrink-0 w-72 overflow-hidden rounded-3xl h-80 shadow-lg hover:shadow-2xl transition duration-300">
-
-                    <img src="images/neuro.png"
-                        class="w-full h-full object-cover scale-[1.3] opacity-90 group-hover:opacity-0 transition" />
-
-                    <video
-                        class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition duration-300"
-                        autoplay muted loop playsinline>
-                        <source src="videos/neuro.mp4" type="video/mp4">
-                    </video>
-
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60 group-hover:opacity-40 transition">
-                    </div>
-
-                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white flex items-center justify-between">
-                        <h3 class="text-2xl font-bold">Neuro</h3>
-                        <button class="bg-white rounded-full p-2 hover:bg-gray-100 transition">
-                            <i class="fas fa-arrow-right text-gray-800"></i>
-                        </button>
-                    </div>
-                </a>
-
-
                 <!-- ==== GASTRO ==== -->
                 <a href="gastrointestinal-interventions.html"
                     class="group relative flex-shrink-0 w-72 overflow-hidden rounded-3xl h-80 shadow-lg hover:shadow-2xl transition duration-300">
@@ -1073,6 +1058,32 @@
                     </div>
                 </a>
 
+                <!-- ==== NEURO ==== -->
+                <a href="neuro-interventions.html"
+                    class="group relative flex-shrink-0 w-72 overflow-hidden rounded-3xl h-80 shadow-lg hover:shadow-2xl transition duration-300">
+
+                    <img src="images/neuro.png"
+                        class="w-full h-full object-cover scale-[1.3] opacity-90 group-hover:opacity-0 transition" />
+
+                    <video
+                        class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition duration-300"
+                        autoplay muted loop playsinline>
+                        <source src="videos/neuro.mp4" type="video/mp4">
+                    </video>
+
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60 group-hover:opacity-40 transition">
+                    </div>
+
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white flex items-center justify-between">
+                        <h3 class="text-2xl font-bold">Neuro</h3>
+                        <button class="bg-white rounded-full p-2 hover:bg-gray-100 transition">
+                            <i class="fas fa-arrow-right text-gray-800"></i>
+                        </button>
+                    </div>
+                </a>
+
+
 
                 <!-- ==== MUSCULEUTUAL ==== -->
                 <a href="musculoskeletal-interventions.html"
@@ -1092,7 +1103,7 @@
                     </div>
 
                     <div class="absolute bottom-0 left-0 right-0 p-6 text-white flex items-center justify-between">
-                        <h3 class="text-2xl font-bold">Musculleutual</h3>
+                        <h3 class="text-2xl font-bold">Musculoskeletal</h3>
                         <button class="bg-white rounded-full p-2 hover:bg-gray-100 transition">
                             <i class="fas fa-arrow-right text-gray-800"></i>
                         </button>
@@ -1219,7 +1230,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <img src="https://i.pinimg.com/1200x/81/ab/14/81ab14a2fed16477924777c3f390e143.jpg"
+                    <img src="images/clinic img.jpg"
                         alt="Clinic Interior" class="rounded-xl shadow-lg w-full">
                 </div>
                 <div class="space-y-6">
@@ -1260,8 +1271,7 @@
 
 
     <!-- Book Appointment Section -->
-    <section id="app"
-" class="py-5 md:py-24 bg-gray-50">
+    <section id="app" " class=" py-5 md:py-24 bg-gray-50">
         <div class="max-w-3xl mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-center">Book An Appointment</h2>
             <p class="text-gray-600 text-center mb-12">Schedule your visit with our expert physicians</p>
@@ -1277,12 +1287,23 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <input type="date"
-                        class="px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500">
 
-                    <input type="time"
-                        class="px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500">
+                    <!-- Date Input -->
+                    <div class="relative">
+                        <i class="ri-calendar-line absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 text-xl"></i>
+                        <input type="date"
+                            class="pl-12 w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500">
+                    </div>
+
+                    <!-- Time Input -->
+                    <div class="relative">
+                        <i class="ri-time-line absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 text-xl"></i>
+                        <input type="time"
+                            class="pl-12 w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500">
+                    </div>
+
                 </div>
+
 
                 <!-- ⭐ PHOTO UPLOAD FIELD ⭐ -->
                 <div>
@@ -2106,9 +2127,29 @@
             });
         }
 
-        // Run on page load
-        document.addEventListener('DOMContentLoaded', renderPublications);
+        document.addEventListener("DOMContentLoaded", function () {
+            const section = document.getElementById("cardSection");
 
+            // Buttons: desktop (`showCardsBtn`) and mobile (`mobilebtn`). Add listeners only if present.
+            const desktopBtn = document.getElementById("showCardsBtn");
+            const mobileBtn = document.getElementById("mobilebtn");
+
+            function toggleCards() {
+                if (!section) return;
+                section.classList.toggle("hidden");
+                // On show, optionally focus the section or scroll into view on small screens
+                if (!section.classList.contains("hidden")) {
+                    // section.scrollIntoView({ });c:\Users\rites\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\20479C788FB27378C2C99EADCF207E7F\WhatsApp Image 2025-12-09 at 11.43.45_e4a5da9f.jpg
+                }
+            }
+
+            if (desktopBtn) desktopBtn.addEventListener("click", toggleCards);
+            if (mobileBtn) {
+                // Support both click and touchstart for responsiveness on some devices
+                mobileBtn.addEventListener("click", toggleCards);
+                mobileBtn.addEventListener("touchstart", function (e) { e.preventDefault(); toggleCards(); });
+            }
+        });
 
     </script>
 </body>
